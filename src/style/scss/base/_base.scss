@@ -1,0 +1,14 @@
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.container {
+  padding: toRem(15) toRem(60);
+  max-width: 100vw;
+}

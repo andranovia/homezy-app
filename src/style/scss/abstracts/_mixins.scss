@@ -1,0 +1,31 @@
+@mixin flex(
+  $flex_direction: row,
+  $align_items: flex-start,
+  $justify_content: flex-start,
+  $flex_wrap: nowrap
+) {
+  display: flex;
+  flex-direction: $flex_direction;
+  align-items: $align_items;
+  justify-content: $justify_content;
+  flex-wrap: $flex_wrap;
+}
+
+@mixin grid(
+  $grid_template_columns: none,
+  $grid_template_rows: none,
+  $grid_gap: 0,
+  $align_items: stretch,
+  $justify_items: stretch,
+  $align_content: stretch,
+  $justify_content: stretch
+) {
+  display: grid;
+  grid-template-columns: $grid_template_columns;
+  grid-template-rows: $grid_template_rows;
+  grid-gap: $grid_gap;
+  align-items: $align_items;
+  justify-items: $justify_items;
+  align-content: $align_content;
+  justify-content: $justify_content;
+}

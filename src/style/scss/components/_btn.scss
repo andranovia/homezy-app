@@ -1,0 +1,15 @@
+.btn {
+    border-radius: 15px;
+    padding: toRem(15) toRem(30);
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: $body-large-size;
+    font-weight: $font-weight-bold;
+    border: none;
+    cursor: pointer;
+
+
+    &--primary{
+        background-color: $color-secondary-dark-primary;
+        color: white;
+    }
+}
