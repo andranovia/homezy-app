@@ -11,6 +11,8 @@
       grid-template-columns: repeat(3, 1fr);
       gap: toRem(60);
     }
+
+
   }
   &__item {
     display: flex;
@@ -299,6 +301,63 @@
     &__photo {
       width: toRem(80);
       height: toRem(80);
+    }
+  }
+
+  &__review {
+    
+    
+    &--item {
+      width: toRem(500);
+      display: flex;
+      border-radius: toRem(15);
+      border: 1px solid $color-secondary-dark-quinary;
+      padding: toRem(30);
+      flex-direction: column;
+      gap: toRem(40);
+      &__rating {
+        display: flex;
+         align-items: center;
+          gap: toRem(15);
+        img {
+          width: toRem(20);
+        }
+      }
+
+      &__text {
+        p {
+          font-family: "Hanken Grotesk", sans-serif;
+          font-size: $body-normal-size;
+          color: $color-secondary-dark-tertiary;
+        }
+        width: 80%;
+      }
+
+      &__user{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img {
+          width: toRem(60);
+        }
+
+        .user--info {
+          display: flex;
+          gap: toRem(10);
+          flex-direction: column;
+          h4 {
+            font-family: "Syne", sans-serif;
+            font-size: $body-xlarge-size;
+            font-weight: $font-weight-bold;
+          }
+          span {
+            font-family: "Hanken Grotesk", sans-serif;
+            font-size: $body-normal-size;
+            color: $color-secondary-dark-tertiary;
+          }
+        }
+      }
     }
   }
 }

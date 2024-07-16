@@ -1,5 +1,6 @@
 import React from 'react'
 import Navigation from '../components/Navigation/Index'
+import Footer from '../components/Footer/Footer'
 
 const HomeLayout = ({children}: {children: React.ReactNode}) => {
   return (
@@ -8,6 +9,8 @@ const HomeLayout = ({children}: {children: React.ReactNode}) => {
         <div className='home__section'>
         {children}
         </div>
+      <Footer/>
+        
     </div>
   )
 }

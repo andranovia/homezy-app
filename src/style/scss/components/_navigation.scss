@@ -1,5 +1,17 @@
 .navbar {
 
+  &__brand {
+    display: flex;
+        align-items: center;
+        margin-bottom: toRem(30);
+        gap: toRem(10);
+        img {
+          width: 40px;
+        }
+        font-weight: $font-weight-bold;
+        font-family: "Syne", sans-serif;
+        font-size: $body-xlarge-size;
+  }
   &__wrapper {
     display: flex;
     align-items: center;

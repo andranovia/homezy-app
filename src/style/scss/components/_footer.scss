@@ -1,0 +1,91 @@
+.footer {
+  background-color: white;
+  padding: 40px;
+  text-align: left;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  color: #333;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__section {
+    margin: 20px;
+
+    &--wrapper {
+      display: flex;
+      align-items: center;
+
+      gap: toRem(80);
+    }
+    &--branding {
+      .footer__logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: toRem(30);
+        gap: toRem(10);
+        img {
+          width: 40px;
+        }
+        font-weight: $font-weight-bold;
+        font-family: "Syne", sans-serif;
+        font-size: $heading-5-size;
+      }
+      .footer__text {
+        font-family: "Hanken Grotesk", sans-serif;
+        margin-bottom: 20px;
+      }
+      .footer__socials {
+        display: flex;
+        gap: 10px;
+        .footer__social {
+          font-size: 20px;
+          color: #333;
+          text-decoration: none;
+          img {
+            width: toRem(20);
+            padding: toRem(8);
+            border-radius: toRem(30);
+            background-color: $color-secondary-dark-primary;
+          }
+        }
+      }
+      width: 30%;
+    }
+
+    &--links,
+    &--utility {
+      .footer__heading {
+        font-weight: $font-weight-regular;
+        margin-bottom: toRem(40);
+        font-family: "Hanken Grotesk", sans-serif;
+        color: $color-secondary-dark-quarternary;
+      }
+      .footer__list {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(10);
+        list-style: none;
+        padding: 0;
+        .footer__link {
+          font-family: "Hanken Grotesk", sans-serif;
+          text-decoration: none;
+          color: #333;
+          font-weight: $font-weight-semi-bold;
+          display: block;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #e7e7e7;
+    margin-top: 60px;
+  }
+}

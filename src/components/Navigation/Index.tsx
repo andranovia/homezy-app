@@ -4,7 +4,10 @@ const Navigation = () => {
   return (
     <div className="container">
       <div className="navbar__wrapper">
-        <div className="navbar__brand">Homezy</div>
+        <div className="navbar__brand">
+          <img src="/placeholder.svg" alt="Homezy Logo" />
+          <span>Homezy</span>
+        </div>
         <div className="navbar__links">
           <ul className="navbar__links__wrapper">
             <li className="navbar__link--item">Home</li>
