@@ -14,21 +14,29 @@ const HomeHero = () => {
           </p>
           <div className="hero__cta">
             <div className="hero__cta--item">
-              <div className="hero__cta--item__img">🤳</div>
+              <div className="hero__cta--item__img">
+                <img src="/placeholder.svg" alt="" />
+              </div>
               <div className="hero__cta--item__text">
                 <h6>Location</h6>
                 <p>California, US</p>
               </div>
             </div>
             <div className="hero__cta--item">
-              <div className="hero__cta--item__img">🤳</div>
+              <div className="hero__cta--item__img">
+                {" "}
+                <img src="/placeholder.svg" alt="" />
+              </div>
               <div className="hero__cta--item__text">
                 <h6>Price</h6>
                 <p>$1500-$2500</p>
               </div>
             </div>
             <div className="hero__cta--item">
-              <div className="hero__cta--item__img">🤳</div>
+              <div className="hero__cta--item__img">
+                {" "}
+                <img src="/placeholder.svg" alt="" />
+              </div>
               <div className="hero__cta--item__text">
                 <h6>Type of Property</h6>
                 <p>Apartment</p>
@@ -43,10 +51,7 @@ const HomeHero = () => {
           <div className="hero__card">
             <div className="hero__card--img">
               <div className="img__border">
-                <img
-                  src="https://images.unsplash.com/photo-1598228723793-52759bba239c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                />
+                <img src="/placeholder.svg" alt="" />
               </div>
             </div>
             <p className="hero__card__text">
@@ -59,19 +64,31 @@ const HomeHero = () => {
               <p>Property Advisor</p>
 
               <div className="hero__profile__text--social">
-                <div className="hero__profile__text--social__item">☎️</div>
-                <div className="hero__profile__text--social__item">☎️</div>
-                <div className="hero__profile__text--social__item">☎️</div>
-                <div className="hero__profile__text--social__item">☎️</div>
+                <div className="hero__profile__text--social__item">
+                  {" "}
+                  <img src="/placeholder.svg" alt="" />
+                </div>
+                <div className="hero__profile__text--social__item">
+                  {" "}
+                  <img src="/placeholder.svg" alt="" />
+                </div>
+                <div className="hero__profile__text--social__item">
+                  {" "}
+                  <img src="/placeholder.svg" alt="" />
+                </div>
+                <div className="hero__profile__text--social__item">
+                  {" "}
+                  <img src="/placeholder.svg" alt="" />
+                </div>
               </div>
             </div>
-            <div className="hero__profile--img">🙎‍♂️</div>
+            <div className="hero__profile--img"> <img
+              src="/placeholder.svg"
+              alt=""
+            /></div>
           </div>
           <div className="hero__card">
-            <img
-              src="https://images.unsplash.com/photo-1598228723793-52759bba239c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-            />
+            <img src="/placeholder.svg" alt="" />
           </div>
         </div>
       </div>
