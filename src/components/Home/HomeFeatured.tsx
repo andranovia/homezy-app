@@ -8,7 +8,7 @@ const HomeFeatured = () => {
       <div className="featured__wrapper">
         <div className="featured__header">
           <h2>Featured Listing</h2>
-          <span>Browse All Featured</span>
+          <span>Browse All Featured <img src="/placeholder.svg" alt="" /></span>
         </div>
         <HomeFeaturedCardMain/>
         <div className="card__wrapper--flex">

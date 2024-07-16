@@ -7,7 +7,7 @@ const HomeCities = () => {
       <div className="cities__wrapper">
         <div className="cities__header">
           <h2>Explore Cities</h2>
-          <span>Browse All Cities</span>
+          <span>Browse All Cities <img src="/placeholder.svg" alt="" /></span>
         </div>
         <div className="card__wrapper--flex">
           <HomeCitiesCard/>
