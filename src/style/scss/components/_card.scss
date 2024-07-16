@@ -1,12 +1,15 @@
 .card {
-
-  
   &__wrapper {
-    &--items {
+    &--flex {
       display: flex;
       align-items: center;
       justify-content: space-between;
       width: 100%;
+    }
+    &--grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: toRem(60);
     }
   }
   &__item {
@@ -72,12 +75,12 @@
       justify-content: space-between;
       gap: toRem(20);
       width: 90%;
-      
+
       span {
-display: flex;
-align-content: center;
-gap: toRem(10);
-        img{
+        display: flex;
+        align-content: center;
+        gap: toRem(10);
+        img {
           width: toRem(20);
         }
         font-family: "Hanken Grotesk", sans-serif;
@@ -126,12 +129,11 @@ gap: toRem(10);
       border-radius: toRem(20);
 
       &--img {
-        height: toRem(200);
         width: toRem(80);
         height: toRem(80);
         img {
           width: toRem(40);
-        height: toRem(40);
+          height: toRem(40);
         }
         background-color: $color-brand-lavender-quaternary;
         margin: toRem(50) toRem(40) toRem(50);
@@ -152,8 +154,6 @@ gap: toRem(10);
         display: flex;
         gap: toRem(20);
         flex-direction: column;
-
-    
       }
 
       &--main {
@@ -172,6 +172,133 @@ gap: toRem(10);
           color: $color-secondary-dark-tertiary;
         }
       }
+    }
+  }
+
+  &__cities {
+    overflow: hidden;
+    border: 2px solid $color-secondary-dark-quinary;
+    &--img {
+      border-top-left-radius: toRem(15);
+      border-top-right-radius: toRem(15);
+
+      width: 100%;
+    }
+
+    &--content {
+      padding: toRem(20);
+
+      span {
+        display: flex;
+        align-items: center;
+        gap: toRem(10);
+        img {
+          width: toRem(20);
+        }
+      }
+    }
+  }
+
+  &__profile {
+    position: absolute;
+    display: flex;
+    z-index: 20;
+    align-items: center;
+    gap: toRem(40);
+    padding: toRem(14);
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid $color-secondary-dark-primary;
+    top: toRem(10);
+    right: 15%;
+
+    img {
+      width: toRem(40);
+    }
+    &__text {
+      display: flex;
+      flex-direction: column;
+
+      h6 {
+        font-family: "Hanken Grotesk", sans-serif;
+        font-size: $body-large-size;
+        font-weight: $font-weight-bold;
+      }
+      p {
+        font-family: "Hanken Grotesk", sans-serif;
+        font-size: $body-small-size;
+        color: $color-secondary-dark-tertiary;
+      }
+
+      &--social {
+        margin-top: toRem(10);
+        display: flex;
+        gap: 4px;
+        align-items: center;
+
+        &__item {
+          font-size: xx-small;
+          padding: toRem(4);
+          background-color: $color-secondary-dark-quinary;
+          border-radius: 100%;
+
+          img {
+            width: toRem(10);
+          }
+        }
+      }
+    }
+
+    &--img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: toRem(50);
+      height: toRem(60);
+      border-radius: 10px;
+      background-color: $color-brand-lavender-quaternary;
+      padding: toRem(10);
+    }
+  }
+
+  &__agents {
+    min-width: toRem(320);
+    position: relative;
+    justify-content: space-between;
+    padding: toRem(20) toRem(20);
+    gap: toRem(60);
+    border: 2px solid $color-secondary-dark-quinary;
+    right: auto;
+
+    &__text {
+      h6 {
+        font-family: "Hanken Grotesk", sans-serif;
+        font-size: $body-xlarge-size;
+        font-weight: $font-weight-bold;
+      }
+      p {
+        font-family: "Hanken Grotesk", sans-serif;
+        font-size: $body-normal-size;
+        color: $color-secondary-dark-tertiary;
+      }
+    }
+
+    &__social {
+      &--item {
+        padding: toRem(6);
+        display: flex;
+        align-items: center;
+
+        background-color: $color-secondary-dark-primary;
+        img {
+          width: toRem(10);
+        }
+      }
+    }
+
+    &__photo {
+      width: toRem(80);
+      height: toRem(80);
     }
   }
 }

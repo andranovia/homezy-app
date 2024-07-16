@@ -24,7 +24,6 @@ const HomeHero = () => {
             </div>
             <div className="hero__cta--item">
               <div className="hero__cta--item__img">
-                {" "}
                 <img src="/placeholder.svg" alt="" />
               </div>
               <div className="hero__cta--item__text">
@@ -34,7 +33,6 @@ const HomeHero = () => {
             </div>
             <div className="hero__cta--item">
               <div className="hero__cta--item__img">
-                {" "}
                 <img src="/placeholder.svg" alt="" />
               </div>
               <div className="hero__cta--item__text">
@@ -58,34 +56,30 @@ const HomeHero = () => {
               We provide our best properties to give great services possible
             </p>
           </div>
-          <div className="hero__profile">
-            <div className="hero__profile__text">
+          <div className="card__profile">
+            <div className="card__profile__text">
               <h6>Edwin Martins</h6>
               <p>Property Advisor</p>
 
-              <div className="hero__profile__text--social">
-                <div className="hero__profile__text--social__item">
-                  {" "}
+              <div className="card__profile__text--social">
+                <div className="card__profile__text--social__item">
                   <img src="/placeholder.svg" alt="" />
                 </div>
-                <div className="hero__profile__text--social__item">
-                  {" "}
+                <div className="card__profile__text--social__item">
                   <img src="/placeholder.svg" alt="" />
                 </div>
-                <div className="hero__profile__text--social__item">
-                  {" "}
+                <div className="card__profile__text--social__item">
                   <img src="/placeholder.svg" alt="" />
                 </div>
-                <div className="hero__profile__text--social__item">
-                  {" "}
+                <div className="card__profile__text--social__item">
                   <img src="/placeholder.svg" alt="" />
                 </div>
               </div>
             </div>
-            <div className="hero__profile--img"> <img
-              src="/placeholder.svg"
-              alt=""
-            /></div>
+            <div className="card__profile--img">
+              {" "}
+              <img src="/placeholder.svg" alt="" />
+            </div>
           </div>
           <div className="hero__card">
             <img src="/placeholder.svg" alt="" />

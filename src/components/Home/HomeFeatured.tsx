@@ -11,7 +11,7 @@ const HomeFeatured = () => {
           <span>Browse All Featured</span>
         </div>
         <HomeFeaturedCardMain/>
-        <div className="card__wrapper--items">
+        <div className="card__wrapper--flex">
         <HomeFeaturedCardItem/>
         <HomeFeaturedCardItem/>
         <HomeFeaturedCardItem/>

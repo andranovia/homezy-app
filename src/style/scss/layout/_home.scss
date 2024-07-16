@@ -1,7 +1,7 @@
 .home__section {
   display: flex;
   flex-direction: column;
-  gap: toRem(40);
+  gap: toRem(80);
 }
 
 .hero {
@@ -153,68 +153,7 @@
     }
   }
 
-  &__profile {
-    position: absolute;
-    display: flex;
-    z-index: 20;
-    align-items: center;
-    gap: toRem(40);
-    padding: toRem(14);
-    background-color: white;
-    border-radius: 20px;
-    border: 3px solid $color-secondary-dark-primary;
-    top: toRem(10);
-    right: 15%;
-
-
-    img {
-      width: toRem(40);
-    }
-    &__text {
-      display: flex;
-      flex-direction: column;
-
-      h6 {
-        font-family: "Hanken Grotesk", sans-serif;
-        font-size: $body-large-size;
-        font-weight: $font-weight-bold;
-      }
-      p {
-        font-family: "Hanken Grotesk", sans-serif;
-        font-size: $body-small-size;
-        color: $color-secondary-dark-tertiary;
-      }
-
-      &--social {
-        margin-top: toRem(10);
-        display: flex;
-        gap: 4px;
-        align-items: center;
-
-        &__item {
-          font-size: xx-small;
-          padding: toRem(4);
-          background-color: $color-secondary-dark-quinary;
-          border-radius: 100%;
-
-          img {
-            width: toRem(10);
-          }
-        }
-      }
-    }
-
-    &--img {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: toRem(50);
-      height: toRem(60);
-      border-radius: 10px;
-      background-color: $color-brand-lavender-quaternary;
-      padding: toRem(10);
-    }
-  }
+ 
 }
 
 .featured {
@@ -428,4 +367,140 @@
    
     }
   }
+}
+
+.categories {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    gap: toRem(80);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    h2 {
+      font-family: "Syne", sans-serif;
+      font-size: $heading-3-size;
+      font-weight: $font-weight-bold;
+    }
+    span {
+      font-family: "Hanken Grotesk", sans-serif;
+      font-size: $body-normal-size;
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  &__item {
+    display: flex;
+    width: toRem(330);
+    align-items: center;
+     justify-content: space-between;
+    padding: toRem(20);
+    border: 2px solid $color-secondary-dark-quinary;
+    border-radius: toRem(15);
+
+     &--content {
+      img {
+        padding: toRem(10);
+        background-color: $color-brand-lavender-quaternary;
+        border-radius: toRem(15);
+        width: toRem(40);
+      }
+      display: flex;
+      align-items: center;
+      gap: toRem(20);
+
+      &__text {
+        h4 {
+          font-family: "Syne", sans-serif;
+          font-size: $body-xlarge-size;
+          font-weight: $font-weight-bold;
+        }
+        span {
+          font-family: "Hanken Grotesk", sans-serif;
+          font-size: $body-normal-size;
+          color: $color-secondary-dark-tertiary;
+        }
+      }
+
+     }
+
+     &--link {
+      span {
+        display: flex;
+        align-items: center;
+        gap: toRem(10);
+        font-family: "Hanken Grotesk", sans-serif;
+        font-size: $body-normal-size;
+        font-weight: $font-weight-semi-bold;
+
+        img {
+          width: toRem(24);
+        }
+      }
+     }
+  }
+}
+
+.cities {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    gap: toRem(80);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    h2 {
+      font-family: "Syne", sans-serif;
+      font-size: $heading-3-size;
+      font-weight: $font-weight-bold;
+    }
+    span {
+      font-family: "Hanken Grotesk", sans-serif;
+      font-size: $body-normal-size;
+      font-weight: $font-weight-bold;
+    }
+  }
+
+
+}
+
+.agents {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    gap: toRem(80);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    h2 {
+      font-family: "Syne", sans-serif;
+      font-size: $heading-3-size;
+      font-weight: $font-weight-bold;
+    }
+    span {
+      font-family: "Hanken Grotesk", sans-serif;
+      font-size: $body-normal-size;
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  
 }

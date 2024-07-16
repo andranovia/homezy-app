@@ -12,7 +12,7 @@ const HomeBenefits = () => {
             because we are very concerned about our consumer satisfaction
           </span>
         </div>
-        <div className="card__wrapper--items">
+        <div className="card__wrapper--flex">
           <HomeBenefitsCardItem />
           <HomeBenefitsCardItem />
           <HomeBenefitsCardItem />
