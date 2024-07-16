@@ -1,4 +1,4 @@
-import React from "react";
+
 import HomeFeaturedCardMain from "./HomeFeaturedCardMain";
 import HomeFeaturedCardItem from "./HomeFeaturedCardItem";
 

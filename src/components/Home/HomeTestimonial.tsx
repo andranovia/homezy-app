@@ -1,4 +1,4 @@
-import React from "react";
+
 import HomeTestimonialItem from "./HomeTestimonialItem";
 
 const HomeTestimonial = () => {

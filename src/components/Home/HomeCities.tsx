@@ -1,5 +1,4 @@
-import React from "react";
-import HomeFeaturedCategoryItem from "./HomeFeaturedCategoryItem";
+
 import HomeCitiesCard from "./HomeCitiesCard";
 
 const HomeCities = () => {

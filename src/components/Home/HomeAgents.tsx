@@ -1,4 +1,4 @@
-import React from "react";
+
 import HomeAgentsItem from "./HomeAgentsItem";
 
 const HomeAgents = () => {

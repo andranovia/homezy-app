@@ -1,4 +1,4 @@
-import React from "react";
+
 import HomeFeaturedCategoryItem from "./HomeFeaturedCategoryItem";
 
 const HomeFeaturedCategory = () => {
