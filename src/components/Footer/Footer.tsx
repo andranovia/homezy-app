@@ -77,7 +77,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="footer__section footer__section--links">
-            <h4 className="footer__heading"></h4>
+            <h4 className="footer__heading">&nbsp;</h4>
             <ul className="footer__list">
               <li>
                 <a href="#" className="footer__link">

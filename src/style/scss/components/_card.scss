@@ -10,6 +10,10 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: toRem(60);
+      @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+       
+      }
     }
 
 
@@ -23,14 +27,23 @@
     height: fit-content;
     border-radius: toRem(20);
 
+      @media (max-width: 600px) {
+        width: 100%;
+       
+      }
+    
+
     &--img {
       height: toRem(200);
+      width: 100%;
       overflow: hidden;
       border-top-left-radius: toRem(20);
       border-top-right-radius: toRem(20);
       img {
-        width: toRem(370);
+        width: 100%;
       }
+
+     
     }
 
     &--content {
@@ -107,9 +120,15 @@
     border-top-right-radius: toRem(10);
     border-bottom-right-radius: toRem(10);
 
+
     &--item {
-      top: 40%;
-      margin-top: 20;
+      
+      top: 38%;
+      
+      
+      @media (max-width: 600px) {
+        top: 36%;
+      }
     }
   }
 
@@ -130,6 +149,11 @@
       height: fit-content;
       border-radius: toRem(20);
 
+
+      @media (max-width: 600px) {
+        width: 100%;
+       
+      }
       &--img {
         width: toRem(80);
         height: toRem(80);
@@ -186,6 +210,7 @@
 
       width: 100%;
     }
+    
 
     &--content {
       padding: toRem(20);
@@ -213,6 +238,12 @@
     border: 3px solid $color-secondary-dark-primary;
     top: toRem(10);
     right: 15%;
+
+    @media (max-width: 600px) {
+      right: 0%;
+      gap: toRem(20);
+      padding: toRem(10);
+    }
 
     img {
       width: toRem(40);
@@ -271,7 +302,12 @@
     gap: toRem(60);
     border: 2px solid $color-secondary-dark-quinary;
     right: auto;
-
+    
+    @media (max-width: 600px) {
+      min-width: auto;;
+     
+    }
+  
     &__text {
       h6 {
         font-family: "Hanken Grotesk", sans-serif;
@@ -335,6 +371,10 @@
 
       &__user{
         width: 80%;
+          
+      @media (max-width: 600px) {
+        width: 100%;
+      }
         display: flex;
         align-items: center;
         justify-content: space-between;

@@ -13,13 +13,13 @@ function App() {
   return (
     <HomeLayout>
       <HomeHero />
-      <HomeFeatured/>
-      <HomeBenefits/>
-      <HomeFeaturedCategory/>
-      <HomeCities/>
-      <HomeAgents/>
-      <HomeTestimonial/>
-      <HomeNewsletter/>
+        <HomeFeatured/>
+        <HomeBenefits/>
+        <HomeFeaturedCategory/>
+        <HomeCities/>
+        <HomeAgents/>
+        <HomeTestimonial/>
+        <HomeNewsletter/>
     </HomeLayout>
   );
 }

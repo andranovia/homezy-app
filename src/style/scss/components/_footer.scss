@@ -5,6 +5,10 @@
   height: 100%;
   font-family: Arial, sans-serif;
   color: #333;
+  @media (max-width: 600px) {
+    padding: 0px;
+    margin-top: toRem(40);
+  }
 
   &__content {
     display: flex;
@@ -17,18 +21,32 @@
 
     &--wrapper {
       display: flex;
-      align-items: center;
-
+      align-items: start;
       gap: toRem(80);
+
+      @media (max-width: 600px) {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        justify-content: space-between;
+        align-items: start;
+        row-gap: toRem(20);
+        column-gap: toRem(50);
+      }
     }
     &--branding {
+      width: 30%;
+
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+
       .footer__logo {
         display: flex;
         align-items: center;
         margin-bottom: toRem(30);
         gap: toRem(10);
         img {
-          width: 40px;
+          width: toRem(40);
         }
         font-weight: $font-weight-bold;
         font-family: "Syne", sans-serif;
@@ -36,7 +54,7 @@
       }
       .footer__text {
         font-family: "Hanken Grotesk", sans-serif;
-        margin-bottom: 20px;
+        margin-bottom: toRem(20);
       }
       .footer__socials {
         display: flex;
@@ -53,7 +71,6 @@
           }
         }
       }
-      width: 30%;
     }
 
     &--links,
@@ -86,6 +103,14 @@
     text-align: center;
     padding-top: 30px;
     border-top: 1px solid #e7e7e7;
-    margin-top: 60px;
+    margin-top: toRem(40) ;
+    color: $color-secondary-dark-tertiary;
+
+
+    @media (max-width: 600px) {
+      margin: toRem(60) toRem(0);
+      font-family: "Hanken Grotesk", sans-serif;
+      font-size: $body-xlarge-size;
+    }
   }
 }

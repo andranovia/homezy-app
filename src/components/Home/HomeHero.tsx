@@ -6,7 +6,7 @@ const HomeHero = () => {
       <div className="hero__wrapper">
         <div className="hero__left">
           <h1 className="hero__title">
-            We welp people to realize their dream property
+            We help people to realize their dream property
           </h1>
           <p className="hero__description">
             We are creative people who provide the best way to you who want to

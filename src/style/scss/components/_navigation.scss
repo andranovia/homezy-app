@@ -1,24 +1,30 @@
 .navbar {
-
   &__brand {
     display: flex;
-        align-items: center;
-        margin-bottom: toRem(30);
-        gap: toRem(10);
-        img {
-          width: 40px;
-        }
-        font-weight: $font-weight-bold;
-        font-family: "Syne", sans-serif;
-        font-size: $body-xlarge-size;
+    align-items: center;
+    margin-bottom: toRem(30);
+    @media only screen and (max-width: 600px) {
+      margin-bottom: toRem(0);
+    }
+    gap: toRem(10);
+    img {
+      width: 40px;
+    }
+    font-weight: $font-weight-bold;
+    font-family: "Syne", sans-serif;
+    font-size: $body-xlarge-size;
   }
   &__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
   }
 
   &__links {
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
     &__wrapper {
       display: flex;
       align-items: center;
@@ -36,11 +42,27 @@
   }
 
   &__contact {
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
     font-family: "Hanken Grotesk", sans-serif;
     padding: toRem(12) toRem(20);
     font-weight: $font-weight-bold;
-    border: 2px solid $color-secondary-dark-primary; 
+    border: 2px solid $color-secondary-dark-primary;
     border-radius: 15px;
   }
-  
+
+  &__dropdown {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: toRem(40);
+    }
+
+    @media only screen and (max-width: 600px) {
+      
+      display: flex;
+    }
+  }
 }

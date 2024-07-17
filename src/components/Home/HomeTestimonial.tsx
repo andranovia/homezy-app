@@ -1,7 +1,42 @@
-
+import { useState } from "react";
 import HomeTestimonialItem from "./HomeTestimonialItem";
+import { useMediaQuery } from "@uidotdev/usehooks";
 
 const HomeTestimonial = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const isMobile = useMediaQuery("only screen and (max-width : 768px)");
+
+  const items = [
+    <HomeTestimonialItem
+      userData={{
+        name: "Brooklyn Simmons",
+        profession: "CEO of Asana",
+      }}
+      review="Your company is truly upstanding and is behind its product 100%.
+It's the perfect solution for our business. It has really helped
+our business."
+    />,
+    <HomeTestimonialItem
+      userData={{
+        name: "Brooklyn Simmons 2",
+        profession: "CEO of Asana",
+      }}
+      review="Your company is truly upstanding and is behind its product 100%.
+It's the perfect solution for our business. It has really helped
+our business."
+    />,
+  ];
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + items.length) % items.length
+    );
+  };
+
   return (
     <div className="container">
       <div className="testimonial__wrapper">
@@ -9,8 +44,38 @@ const HomeTestimonial = () => {
           <h2>Kind Words From Our Customers</h2>
         </div>
         <div className="card__wrapper--flex">
-          <HomeTestimonialItem/>
-          <HomeTestimonialItem/>
+          {isMobile ? (
+            <>{items[currentIndex]}</>
+          ) : (
+            <>
+              <HomeTestimonialItem
+                userData={{
+                  name: "Brooklyn Simmons",
+                  profession: "CEO of Asana",
+                }}
+                review="Your company is truly upstanding and is behind its product 100%.
+      It's the perfect solution for our business. It has really helped
+      our business."
+              />
+              <HomeTestimonialItem
+                userData={{
+                  name: "Brooklyn Simmons 2",
+                  profession: "CEO of Asana",
+                }}
+                review="Your company is truly upstanding and is behind its product 100%.
+      It's the perfect solution for our business. It has really helped
+      our business."
+              />
+            </>
+          )}
+        </div>
+        <div className="btn__navigation">
+          <button onClick={handlePrev}>
+            <img src="/placeholder.svg" alt="back" />
+          </button>
+          <button onClick={handleNext}>
+            <img src="/placeholder.svg" alt="next" />
+          </button>
         </div>
       </div>
     </div>

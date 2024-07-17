@@ -1,6 +1,10 @@
+
+
+
+
 .btn {
     border-radius: 15px;
-    padding: toRem(15) toRem(30);
+    padding: toRem(15) toRem(0);
     font-family: "Hanken Grotesk", sans-serif;
     font-size: $body-large-size;
     font-weight: $font-weight-bold;
@@ -11,5 +15,26 @@
     &--primary{
         background-color: $color-secondary-dark-primary;
         color: white;
+    }
+
+    &__navigation {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        gap: toRem(30);
+
+        @media (max-width: 600px) {
+          display: flex;
+          }
+        button {
+            padding: toRem(14);
+            display: flex;
+            background-color: $color-secondary-dark-primary;
+            color: white;
+            border-radius: toRem(18);
+            img {
+                width: toRem(20);
+            }
+        }
     }
 }

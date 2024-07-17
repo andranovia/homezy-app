@@ -1,6 +1,8 @@
 
 
-const HomeTestimonialItem = () => {
+const HomeTestimonialItem = ({review, userData}: {review: string, userData: {
+  name: string, profession: string
+}}) => {
   return (
     <div className="card__review--item">
     <div className="card__review--item__rating">
@@ -9,15 +11,13 @@ const HomeTestimonialItem = () => {
       ))}
     </div>
     <div className="card__review--item__text">
-      <p> "Your company is truly upstanding and is behind its product 100%.
-      It's the perfect solution for our business. It has really helped
-      our business."</p>
+      <p> {review}</p>
      
     </div>
     <div className="card__review--item__user">
       <div className="user--info">
-        <h4>Brooklyn Simmons</h4>
-        <span>CEO of Asana</span>
+        <h4>{userData.name}</h4>
+        <span>{userData.profession}</span>
       </div>
       <img src="/placeholder.svg" alt="" />
     </div>

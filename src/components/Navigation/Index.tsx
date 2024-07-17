@@ -16,6 +16,7 @@ const Navigation = () => {
           </ul>
         </div>
         <div className="navbar__contact">Contact Us</div>
+        <div className="navbar__dropdown"><img src="/placeholder.svg" alt="" /></div>
       </div>
     </div>
   );

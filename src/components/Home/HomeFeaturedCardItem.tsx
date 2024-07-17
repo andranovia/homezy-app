@@ -12,7 +12,7 @@ const HomeFeaturedCardItem = () => {
       </div>
       <div className="card__item--content">
         <div className="card__item--main">
-          <h3>$15,000</h3>
+          <h3>$15,000<span> /month</span></h3>
           <h4>Beach Pros Reality Inc.</h4>
           <span>37 Ambleside Gardens, Ilford, IG4 5HH</span>
         </div>
