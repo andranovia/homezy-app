@@ -104,6 +104,10 @@
           font-weight: $font-weight-semi-bold;
           display: block;
           margin-bottom: 5px;
+
+          @media (max-width: 425px) {
+            font-size: $body-xsmall-size;
+          }
         }
       }
     }
