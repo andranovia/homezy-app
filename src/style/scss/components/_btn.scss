@@ -17,6 +17,12 @@
         color: white;
     }
 
+    &--secondary{
+        border: 2px solid $color-secondary-dark-primary;
+        color: $color-secondary-dark-primary;
+        background-color: white;
+    }
+
     &__navigation {
         display: none;
         align-items: center;

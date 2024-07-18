@@ -6,12 +6,12 @@ import HomeFeatured from "./components/Home/HomeFeatured";
 import HomeFeaturedCategory from "./components/Home/HomeFeaturedCategory";
 import HomeHero from "./components/Home/HomeHero";
 import HomeTestimonial from "./components/Home/HomeTestimonial";
-import HomeLayout from "./Layouts/Home";
 import HomeNewsletter from "./components/Home/HomeNewsletter";
+import BaseLayout from "./Layouts/BaseLayout";
 
 function App() {
   return (
-    <HomeLayout>
+    <BaseLayout>
       <HomeHero />
         <HomeFeatured/>
         <HomeBenefits/>
@@ -20,7 +20,7 @@ function App() {
         <HomeAgents/>
         <HomeTestimonial/>
         <HomeNewsletter/>
-    </HomeLayout>
+    </BaseLayout>
   );
 }
 

@@ -45,26 +45,26 @@ const HomeFeaturedCardMain = () => {
               magnam odio minus. <span>Read More</span>
             </p>
           </div>
-          <div className="card__info--facilities">
-            <div className="card__info--facilities__item">
+          <div className="card__facilities">
+            <div className="card__facilities--item">
               <h4>bedrooms</h4>
               <span>
                 <img src="/placeholder.svg" alt="" /> 4
               </span>
             </div>
-            <div className="card__info--facilities__item">
+            <div className="card__facilities--item">
               <h4>Bathrooms</h4>
               <span>
                 <img src="/placeholder.svg" alt="" /> 4
               </span>
             </div>
-            <div className="card__info--facilities__item">
+            <div className="card__facilities--item">
               <h4>Square Area</h4>
               <span>
                 <img src="/placeholder.svg" alt="" /> 6x8m²
               </span>
             </div>
-            <div className="card__info--facilities__item">
+            <div className="card__facilities--item">
               <h4>Square Area</h4>
               <span>
                 <img src="/placeholder.svg" alt="" /> Modern Loft

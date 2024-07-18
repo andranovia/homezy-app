@@ -2,7 +2,7 @@ import React from 'react'
 import Navigation from '../components/Navigation/Index'
 import Footer from '../components/Footer/Footer'
 
-const HomeLayout = ({children}: {children: React.ReactNode}) => {
+const BaseLayout = ({children}: {children: React.ReactNode}) => {
   return (
     <div className='container'>
         <Navigation/>
@@ -15,4 +15,4 @@ const HomeLayout = ({children}: {children: React.ReactNode}) => {
   )
 }
 
-export default HomeLayout
+export default BaseLayout

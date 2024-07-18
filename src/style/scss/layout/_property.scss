@@ -1,0 +1,286 @@
+.property {
+  &__details {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+
+    &--wrapper {
+      margin: toRem(80) toRem(0);
+      display: flex;
+      flex-direction: column;
+      gap: toRem(40);
+    }
+    &--images {
+      display: grid;
+      grid-template-columns: 2.5fr 1fr;
+      grid-template-rows: 1fr 1fr;
+
+      gap: toRem(40);
+      img {
+        height: 100%;
+        width: 100%;
+
+        object-fit: cover;
+      }
+    }
+
+    &--img-1 {
+      grid-row: span 2;
+      max-height: toRem(600);
+      border-radius: toRem(15);
+    }
+
+    &--img-2,
+    &--img-3 {
+      border-radius: toRem(15);
+      max-height: toRem(280);
+    }
+
+    &--content {
+      display: grid;
+      grid-template-columns: 2.5fr 1fr;
+
+      gap: toRem(40);
+    }
+    &--info {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(40);
+      &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+
+        h2 {
+          font-family: "Syne", sans-serif;
+          font-size: $heading-5-size;
+        }
+
+        p {
+          margin-top: toRem(10);
+          font-family: "Hanken Grotesk", sans-serif;
+          font-size: $body-large-size;
+          font-weight: 300;
+          color: $color-secondary-dark-tertiary;
+        }
+
+        button {
+          padding: toRem(10) toRem(40);
+        }
+      }
+
+      &__description {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(20);
+        h4 {
+          font-family: "Syne", sans-serif;
+          font-size: $heading-6-size;
+          font-weight: $font-weight-bold;
+          color: $color-secondary-dark-primary;
+        }
+        p {
+          font-family: "Hanken Grotesk", sans-serif;
+          font-size: $body-large-size;
+          font-weight: 300;
+          line-height: $body-large-line-height-regular;
+          color: $color-secondary-dark-secondary;
+        }
+
+        .tour--link {
+          display: flex;
+          align-items: center;
+          gap: toRem(10);
+          margin-top: toRem(10);
+          img {
+            width: toRem(20);
+          }
+          h5 {
+            font-family: "Hanken Grotesk", sans-serif;
+            font-weight: $font-weight-bold;
+            font-size: $body-normal-size;
+          }
+        }
+      }
+    }
+
+    &--request {
+      padding: toRem(30);
+      background-color: $color-brand-lavender-quinary;
+      border-radius: toRem(15);
+      border: 2px solid $color-secondary-dark-secondary;
+      display: flex;
+      flex-direction: column;
+      gap: toRem(25);
+
+      &__pricing {
+        display: flex;
+        flex-direction: column;
+        p {
+          font-family: "Hanken Grotesk", sans-serif;
+          font-weight: $font-weight-semi-bold;
+          line-height: $body-large-line-height-regular;
+          color: $color-secondary-dark-tertiary;
+        }
+        span {
+          font-family: "Hanken Grotesk", sans-serif;
+          font-size: $heading-4-size;
+          font-weight: $font-weight-bold;
+        }
+      }
+
+      &__title {
+        h3 {
+          font-family: "Syne", sans-serif;
+          font-size: $body-xlarge-size;
+          font-weight: $font-weight-bold;
+          color: $color-secondary-dark-primary;
+        }
+      }
+      &__form {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(15);
+        .request-tour {
+          font-size: $body-large-size   ;
+          font-weight: bold;
+        }
+
+        .tabs {
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid $color-secondary-dark-tertiary;
+
+          .tab {
+            font-family: "Hanken Grotesk", sans-serif;
+            font-weight: $font-weight-semi-bold;
+            flex: 1;
+            text-align: center;
+            padding: toRem(10) 0;
+            font-size: $body-small-size;
+            cursor: pointer;
+            color: $color-secondary-dark-tertiary;
+
+            &.active {
+              color: $color-secondary-dark-primary;
+              border-bottom: 2px solid $color-secondary-dark-primary;
+            }
+          }
+        }
+
+        .input-group {
+          display: flex;
+          align-items: center;
+          padding: toRem(10);
+          background-color: white;
+          border: 1px solid $color-secondary-dark-quinary;
+          border-radius: toRem(15);
+
+          .icon {
+            margin-right: 10px;
+            color: $color-secondary-dark-secondary;
+          }
+
+          input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: $body-small-size;
+            background: transparent;
+            &::placeholder {
+              color: $color-secondary-dark-quarternary;
+              font-family: "Hansen Grotesk", sans-serif;
+            }
+          }
+
+        }
+      }
+    }
+    &--accordion {
+  
+      font-family: 'Syne', sans-serif;
+
+      &__title {
+        font-size: $heading-6-size;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: $color-secondary-dark-primary;
+      }
+
+      .accordion {
+        border: 2px solid $color-brand-lavender-quinary;
+        border-radius: toRem(15);
+        background-color: white;
+        margin-bottom: 10px;
+        overflow: hidden;
+    
+        &__header {
+          padding: 15px;
+          font-size: 18px;
+          font-weight: bold;
+          cursor: pointer;
+          background-color: $color-brand-lavender-quinary;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+    
+          .arrow {
+            transform: rotate(90deg);
+            transition: transform 0.3s ease;
+          }
+    
+          &.active .arrow {
+            transform: rotate(270deg);
+          }
+        }
+    
+        &__content {
+          padding: 15px;
+        display: flex;
+        gap: toRem(10);
+        flex-direction: column  ;
+        hr {
+            opacity: 0.4;
+        }
+          .section-title {
+            font-family: 'Hansen Grotesk', sans-serif;
+            font-size: $body-normal-size;
+            font-weight: light;
+            margin-bottom: toRem(10);
+            color: $color-secondary-dark-tertiary;
+          }
+    
+          .details {
+            font-family: 'Hansen Grotesk', sans-serif;
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            gap: toRem(20);
+            font-weight: $font-weight-bold;
+            width: 100%;
+            font-size: $body-normal-size;
+            margin-bottom: 10px;
+    
+            &__item {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+    &--others {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(40);
+      h2 {
+        font-family: "Syne", sans-serif;
+        font-size: $heading-5-size;
+      }
+    }
+
+   
+  }
+}

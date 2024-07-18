@@ -458,4 +458,48 @@
       }
     }
   }
+  &__facilities {
+    border-radius: toRem(15);
+    background-color: #f7f2ff;
+    padding: toRem(29);
+    display: flex;
+    justify-content: space-around;
+    gap: toRem(40);
+
+    @media (max-width: 700px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &--item {
+      h4 {
+        font-family: "Hanken Grotesk", sans-serif;
+        font-size: $body-large-size;
+        font-weight: 400;
+        color: $color-secondary-dark-tertiary;
+
+        @media (max-width: 1375px) {
+          font-size: $body-normal-size;
+        }
+      }
+      span {
+        display: flex;
+        align-items: center;
+        margin-top: toRem(10);
+        gap: toRem(10);
+
+        img {
+          width: toRem(24);
+        }
+        font-family: "Hanken Grotesk", sans-serif;
+        font-size: $body-normal-size;
+
+        font-weight: $font-weight-bold;
+
+        @media (max-width: 1375px) {
+          font-size: $body-small-size;
+        }
+      }
+    }
+  }
 }
