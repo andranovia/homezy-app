@@ -14,7 +14,7 @@ const HomeFeatured = () => {
         </div>
         <HomeFeaturedCardMain />
         <div className="card__wrapper--flex">
-          {[...Array(3)].map((data, index) => (
+          {[...Array(3)].map((_, index) => (
             <Link to="/property/details" className="custom-link" key={index}>
               <HomeFeaturedCardItem />
             </Link>
