@@ -37,9 +37,9 @@ const HomeBenefits = () => {
             <>{items[currentIndex]}</>
           ) : (
             <>
-              <HomeBenefitsCardItem key="1" title="Affordable Price" description="We provide the best for you. The price we offer accordance with the quality we provide"/>,
-              <HomeBenefitsCardItem key="2" title="Affordable Price" description="We provide the best for you. The price we offer accordance with the quality we provide"/>,
-              <HomeBenefitsCardItem key="3"title="Affordable Price" description="We provide the best for you. The price we offer accordance with the quality we provide" />,
+              <HomeBenefitsCardItem key="1" title="Affordable Price" description="We provide the best for you. The price we offer accordance with the quality we provide"/>
+              <HomeBenefitsCardItem key="2" title="Affordable Price" description="We provide the best for you. The price we offer accordance with the quality we provide"/>
+              <HomeBenefitsCardItem key="3"title="Affordable Price" description="We provide the best for you. The price we offer accordance with the quality we provide" />
             </>
           )}
         </div>

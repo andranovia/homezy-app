@@ -1,8 +1,9 @@
 .navbar {
+  
   &__brand {
     display: flex;
     align-items: center;
-    margin-bottom: toRem(30);
+ 
     @media only screen and (max-width: 600px) {
       margin-bottom: toRem(0);
     }
@@ -22,7 +23,7 @@
   }
 
   &__links {
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 1024px) {
       display: none;
     }
     &__wrapper {
@@ -42,7 +43,7 @@
   }
 
   &__contact {
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 1024px) {
       display: none;
     }
     font-family: "Hanken Grotesk", sans-serif;
@@ -60,7 +61,7 @@
       width: toRem(40);
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 1024px) {
       
       display: flex;
     }

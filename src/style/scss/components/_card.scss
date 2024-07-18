@@ -5,18 +5,24 @@
       align-items: center;
       justify-content: space-between;
       width: 100%;
+      @media (max-width: 1440px) {
+        gap: toRem(20);
+      }
+      @media (max-width: 1024px) {
+        flex-direction: column;
+      }
     }
     &--grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: toRem(60);
-      @media (max-width: 600px) {
+      @media (max-width: 1440px) {
+        grid-template-columns: 1fr 1fr;
+      }
+      @media (max-width: 910px) {
         grid-template-columns: 1fr;
-       
       }
     }
-
-
   }
   &__item {
     display: flex;
@@ -27,11 +33,9 @@
     height: fit-content;
     border-radius: toRem(20);
 
-      @media (max-width: 600px) {
-        width: 100%;
-       
-      }
-    
+    @media (max-width: 1392px) {
+      width: 100%;
+    }
 
     &--img {
       height: toRem(200);
@@ -42,8 +46,6 @@
       img {
         width: 100%;
       }
-
-     
     }
 
     &--content {
@@ -120,12 +122,9 @@
     border-top-right-radius: toRem(10);
     border-bottom-right-radius: toRem(10);
 
-
     &--item {
-      
       top: 38%;
-      
-      
+
       @media (max-width: 600px) {
         top: 36%;
       }
@@ -149,10 +148,18 @@
       height: fit-content;
       border-radius: toRem(20);
 
-
-      @media (max-width: 600px) {
+      @media (max-width: 1400px) {
         width: 100%;
-       
+      }
+
+      @media (max-width: 1024px) {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: start;
       }
       &--img {
         width: toRem(80);
@@ -180,6 +187,17 @@
         display: flex;
         gap: toRem(20);
         flex-direction: column;
+
+        @media (max-width: 1440px) {
+          padding: toRem(20) toRem(20) toRem(20);
+        }
+        @media (max-width: 1024px) {
+          padding: 0;
+        }
+
+        @media (max-width: 768px) {
+          padding: toRem(20) toRem(40) toRem(40);
+        }
       }
 
       &--main {
@@ -204,17 +222,29 @@
   &__cities {
     overflow: hidden;
     border: 2px solid $color-secondary-dark-quinary;
+
+    @media (max-width: 1024px) {
+      display: flex;
+      align-items: start;
+      gap: toRem(10);
+      flex-direction: column;
+    }
+
     &--img {
       border-top-left-radius: toRem(15);
       border-top-right-radius: toRem(15);
 
       width: 100%;
+
+      
+    @media (max-width: 1024px) {
+      max-height: toRem(400);
+      object-fit: cover;
     }
-    
+    }
 
     &--content {
       padding: toRem(20);
-
       span {
         display: flex;
         align-items: center;
@@ -239,7 +269,27 @@
     top: toRem(10);
     right: 15%;
 
+    @media (max-width: 1340px) {
+      right: 30%;
+    }
+
+    @media (max-width: 1024px) {
+      right: 25%;
+    }
+
+    @media (max-width: 1024px) {
+      right: 20%;
+    }
+
+    @media (max-width: 768px) {
+      right: 15%;
+    }
+
     @media (max-width: 600px) {
+      right: 10%;
+    }
+
+    @media (max-width: 430px) {
       right: 0%;
       gap: toRem(20);
       padding: toRem(10);
@@ -302,17 +352,23 @@
     gap: toRem(60);
     border: 2px solid $color-secondary-dark-quinary;
     right: auto;
-    
+
     @media (max-width: 600px) {
-      min-width: auto;;
-     
+      min-width: auto;
     }
-  
+
     &__text {
       h6 {
         font-family: "Hanken Grotesk", sans-serif;
         font-size: $body-xlarge-size;
         font-weight: $font-weight-bold;
+        @media (max-width: 910px) {
+          font-size: $heading-6-size;
+        }
+
+        @media (max-width: 768px) {
+          font-size: $body-xlarge-size;
+        }
       }
       p {
         font-family: "Hanken Grotesk", sans-serif;
@@ -341,8 +397,6 @@
   }
 
   &__review {
-    
-    
     &--item {
       width: toRem(500);
       display: flex;
@@ -351,10 +405,14 @@
       padding: toRem(30);
       flex-direction: column;
       gap: toRem(40);
+
+      @media (max-width: 1030px) {
+       width: auto;
+      }
       &__rating {
         display: flex;
-         align-items: center;
-          gap: toRem(15);
+        align-items: center;
+        gap: toRem(15);
         img {
           width: toRem(20);
         }
@@ -369,12 +427,12 @@
         width: 80%;
       }
 
-      &__user{
+      &__user {
         width: 80%;
-          
-      @media (max-width: 600px) {
-        width: 100%;
-      }
+
+        @media (max-width: 600px) {
+          width: 100%;
+        }
         display: flex;
         align-items: center;
         justify-content: space-between;

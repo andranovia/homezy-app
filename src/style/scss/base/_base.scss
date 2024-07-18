@@ -11,6 +11,13 @@
 .container {
   padding: toRem(15) toRem(60);
   max-width: 100vw;
+  @media only screen and (max-width: 1275px) {
+    padding: toRem(15) toRem(20);
+  }
+
+  @media only screen and (max-width: 1024px) {
+    padding: toRem(15) toRem(30);
+  }
   @media only screen and (max-width: 600px) {
     padding: toRem(10);
   }

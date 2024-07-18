@@ -4,7 +4,7 @@ import { useMediaQuery } from "@uidotdev/usehooks";
 
 const HomeAgents = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const isMobile = useMediaQuery("only screen and (max-width : 768px)");
+  const isMobile = useMediaQuery("only screen and (max-width : 910px)");
 
   const items = [
     <HomeAgentsItem name="Edwin Martins" profession="Property Advisor" />,
