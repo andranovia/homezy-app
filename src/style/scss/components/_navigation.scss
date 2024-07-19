@@ -1,25 +1,46 @@
 .navbar {
-  
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+  background-color: white;
+
+  @media only screen and (min-width: 1600px) {
+    max-width:  toRem(1500);
+
+  }
   &__brand {
     display: flex;
     align-items: center;
- 
-    @media only screen and (max-width: 600px) {
-      margin-bottom: toRem(0);
-    }
-    gap: toRem(10);
-    img {
-      width: 40px;
-    }
     font-weight: $font-weight-bold;
     font-family: "Syne", sans-serif;
     font-size: $body-xlarge-size;
+    gap: toRem(10);
+
+    @media only screen and (max-width: 600px) {
+      margin-bottom: toRem(0);
+    }
+
+    img {
+      width: 40px;
+    }
   }
   &__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: toRem(20) toRem(120);
     
+    @media only screen and (max-width: 1275px) {
+      padding: toRem(20) toRem(40);
+    }
+  
+    @media only screen and (max-width: 1024px) {
+      padding: toRem(20) toRem(60);
+    }
+    @media only screen and (max-width: 600px) {
+      padding: toRem(20);
+    }
   }
 
   &__links {
@@ -62,7 +83,6 @@
     }
 
     @media only screen and (max-width: 1024px) {
-      
       display: flex;
     }
   }

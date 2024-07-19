@@ -9,15 +9,36 @@
 }
 
 .custom-link {
+  
   text-decoration: none;  
   color: inherit;         
-  display: block;  
+  display: contents;  
   width: 100%;     
+   
+}
+
+.max--width {
+  @media only screen and (min-width: 1600px) {
+    width: 100%;   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+
 }
 
 .container {
   padding: toRem(15) toRem(60);
   max-width: 100vw;
+
+
+  @media only screen and (min-width: 1600px) {
+    max-width:  toRem(1500);
+
+  }
   @media only screen and (max-width: 1275px) {
     padding: toRem(15) toRem(20);
   }

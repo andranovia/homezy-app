@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   gap: toRem(80);
+  margin: toRem(80) toRem(0);
+  @media (max-width: 1200px) {
+    margin: toRem(40) toRem(0);
+  }
+
 }
 
 .hero {
@@ -11,7 +16,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    @media (max-width: 1340px) {
+    @media (max-width: 992px) {
       flex-direction: column;
     }
   }
@@ -22,24 +27,62 @@
     justify-content: center;
     flex-direction: column;
     gap: toRem(20);
-    @media (max-width: 1340px) {
+
+    @media (max-width: 1125px) {
       width: 100%;
+   
+    }
+
+    
+    @media (max-width: 992px) {
       margin-bottom: toRem(80);
+   
     }
   }
 
   &__title {
     width: 80%;
     font-size: $heading-1-size;
-
     font-family: "Syne", sans-serif;
-    @media (max-width: 900px) {
+
+    @media (max-width: 1400px) {
+      font-size: 60px;
+      line-height: $heading-1-line-height;
+      width: 80%;
+    }
+
+    @media (max-width: 1200px) {
+
+      font-size: 56px;
+    }
+    @media (max-width: 1125px) {
+      width: 60%;
+    }
+    @media (max-width: 1060px) {
+      width: 54%;
+    }
+    @media (max-width: 1018px) {
+      font-size: toRem(54);
+    }
+    
+    @media (max-width: 992px) {
+      font-size: toRem(60);
+      line-height: $heading-1-line-height;
+      width: 80%;
+    }
+    @media (max-width: 765px) {
       font-size: $heading-2-size;
       line-height: $heading-2-line-height;
       width: 100%;
     }
     @media (max-width: 600px) {
       font-size: $heading-3-size;
+      line-height: $heading-2-line-height;
+      width: 100%;
+    }
+
+    @media (max-width: 376px) {
+      font-size: $heading-5-size;
       line-height: $heading-2-line-height;
       width: 100%;
     }
@@ -52,9 +95,15 @@
     color: $color-secondary-dark-secondary;
     width: 50%;
     @media (max-width: 768px) {
-      width: 100%;
+      width: 80%;
       font-size: toRem(22);
       line-height: $body-xlarge-line-height-regular;
+    }
+
+    
+    @media (max-width: 376px) {
+
+      width: 100%;
     }
   }
 
@@ -70,6 +119,23 @@
     border-radius: 15px;
     padding: toRem(20);
 
+    @media (max-width: 1200px) {
+      width: 100%;
+      padding: toRem(20) toRem(0);
+      justify-content: space-evenly;
+    }
+    @media (max-width: 840px) {
+      padding: toRem(20);
+    }
+
+    @media (max-width: 1125px) {
+      margin-top: toRem(80);
+    }
+
+    @media (max-width: 992px) {
+      margin-top: toRem(40);
+    }
+
     @media (max-width: 840px) {
       width: auto;
       align-items: start;
@@ -80,6 +146,7 @@
       font-family: "Hanken Grotesk", sans-serif;
       font-size: $body-large-size;
       font-weight: $font-weight-bold;
+
       display: flex;
       align-items: center;
       gap: toRem(10);
@@ -87,6 +154,9 @@
       h6 {
         color: $color-secondary-dark-tertiary;
         font-weight: $font-weight-regular;
+        @media (max-width: 1200px) {
+          font-size: $body-xsmall-size;
+        }
       }
 
       &__img {
@@ -121,14 +191,25 @@
 
   &__right {
     position: absolute;
-    right: 0;
-    top: 25%;
-    width: 40%;
+    right: toRem(100);
+    top: toRem(140);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: toRem(20);
-    @media (max-width: 1340px) {
+
+    @media (min-width: 1600px) {
+      position: relative;
+      right: 0;
+      top: toRem(-80);
+    }
+    @media (max-width: 1200px) {
+      right: toRem(40);
+      top: toRem(120);
+    }
+    @media (max-width: 992px) {
+      right: toRem(0);
+      top: toRem(0);
       position: relative;
       width: 100%;
       margin: toRem(80) toRem(0);
@@ -142,6 +223,12 @@
     height: toRem(360);
     border-radius: 20px;
 
+    @media (max-width: 1400px) {
+      width: toRem(180);
+      height: toRem(280);
+    }
+
+
     @media (max-width: 600px) {
       width: toRem(180);
       height: toRem(280);
@@ -149,12 +236,10 @@
 
     @media (max-width: 376px) {
       width: toRem(160);
-  
     }
 
     @media (max-width: 320px) {
       width: toRem(130);
-
     }
     &__text {
       margin-top: -30px;
@@ -184,6 +269,11 @@
 
       padding-right: toRem(4);
 
+      @media (max-width: 1400px) {
+        width: toRem(180);
+        height: toRem(280);
+      }
+
       @media (max-width: 600px) {
         width: toRem(180);
         height: toRem(280);
@@ -191,12 +281,10 @@
 
       @media (max-width: 376px) {
         width: toRem(160);
- 
       }
 
       @media (max-width: 320px) {
         width: toRem(130);
- 
       }
     }
 
@@ -228,18 +316,28 @@
     height: toRem(300);
     overflow: hidden;
 
+    @media (max-width: 1125px) {
+      top: toRem(95);
+      height: toRem(230);
+    }
+
     @media (max-width: 600px) {
       height: toRem(280);
-      top: toRem(150);
+      top: toRem(120);
     }
-    border: 3px solid $color-secondary-dark-primary;
+
+    & {
+      border: 3px solid $color-secondary-dark-primary;
+    }
 
     img {
       height: toRem(310);
       @media (max-width: 600px) {
         height: toRem(290);
       }
-      border-radius: 20px;
+      & {
+        border-radius: 20px;
+      }
     }
   }
 }
@@ -292,11 +390,16 @@
       img {
         width: toRem(26);
       }
-      font-family: "Hanken Grotesk", sans-serif;
-      font-size: $body-normal-size;
-      font-weight: $font-weight-bold;
+      & {
+        font-family: "Hanken Grotesk", sans-serif;
+      }
+      & {
+        font-size: $body-normal-size;
+      }
+      & {
+        font-weight: $font-weight-bold;
+      }
     }
- 
   }
 
   &__main {
@@ -328,7 +431,9 @@
           width: 100%;
         }
 
-        z-index: 8;
+        & {
+          z-index: 8;
+        }
       }
 
       &__info {
@@ -371,7 +476,6 @@
                 color: $color-secondary-dark-tertiary;
               }
             }
-
           }
 
           &__content {
@@ -407,7 +511,6 @@
               color: #000;
             }
           }
-          
         }
       }
     }
@@ -453,9 +556,15 @@
 
         font-size: $heading-5-size;
       }
-      font-family: "Syne", sans-serif;
-      font-size: $heading-3-size;
-      font-weight: $font-weight-bold;
+      & {
+        font-family: "Syne", sans-serif;
+      }
+      & {
+        font-size: $heading-3-size;
+      }
+      & {
+        font-weight: $font-weight-bold;
+      }
     }
     span {
       width: 35%;
@@ -465,10 +574,11 @@
       @media (max-width: 600px) {
         width: 100%;
       }
-      line-height: $body-xlarge-line-height-regular;
-      font-family: "Hanken Grotesk", sans-serif;
-      font-size: $body-xlarge-size;
-      color: $color-secondary-dark-secondary;
+      & {
+        line-height: $body-xlarge-line-height-regular;
+        font-family: "Hanken Grotesk", sans-serif;
+        font-size: $body-xlarge-size;
+      }
     }
   }
 }
@@ -496,7 +606,6 @@
     width: 100%;
     align-items: center;
 
-    
     @media (max-width: 830px) {
       flex-direction: column;
       align-items: start;
@@ -533,18 +642,13 @@
     border: 2px solid $color-secondary-dark-quinary;
     border-radius: toRem(15);
 
-
-  
     @media (max-width: 1440px) {
-     width: 100%;
-      
+      width: 100%;
     }
 
-     @media (max-width: 600px) {
-   padding: 0;
-      
+    @media (max-width: 600px) {
+      padding: 0;
     }
-    
 
     &--content {
       img {
@@ -613,8 +717,6 @@
         gap: toRem(20);
       }
     }
-
- 
   }
 
   &__header {
@@ -664,12 +766,10 @@
       gap: toRem(40);
     }
 
-   
     .btn__navigation {
       @media (max-width: 910px) {
         display: flex;
       }
-     
     }
   }
 
@@ -781,14 +881,13 @@
       h6 {
         color: $color-secondary-dark-tertiary;
         font-weight: $font-weight-regular;
-     
       }
 
       &__img {
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
         border-radius: 15px;
         background-color: $color-brand-lavender-secondary;
         padding: toRem(10);
@@ -815,7 +914,7 @@
     color: white;
     padding: toRem(40) toRem(40) toRem(50);
     width: 40%;
-    
+
     @media (max-width: 1024px) {
       width: 40%;
     }
@@ -837,9 +936,9 @@
       @media (max-width: 1024px) {
         font-size: $heading-5-size;
       }
-         @media (max-width: 320px) {
-          font-size: $body-xlarge-size;
-        }
+      @media (max-width: 320px) {
+        font-size: $body-xlarge-size;
+      }
     }
     span {
       font-family: "Hanken Grotesk", sans-serif;

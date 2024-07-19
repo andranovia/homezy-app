@@ -1,18 +1,16 @@
-import React from 'react'
-import Navigation from '../components/Navigation/Index'
-import Footer from '../components/Footer/Footer'
+import React from "react";
+import Navigation from "../components/Navigation/Index";
+import Footer from "../components/Footer/Footer";
 
-const BaseLayout = ({children}: {children: React.ReactNode}) => {
+const BaseLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className='container'>
-        <Navigation/>
-        <div className='home__section'>
-        {children}
-        </div>
-      <Footer/>
-        
-    </div>
-  )
-}
+    <div className="max--width">
+      <Navigation />
 
-export default BaseLayout
+      <div className="home__section container ">{children}</div>
+      <Footer />
+    </div>
+  );
+};
+
+export default BaseLayout;

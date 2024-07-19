@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer__content">
+      <div className="footer__content ">
         <div className="footer__section footer__section--branding">
           <div className="footer__logo">
             <img src="/placeholder.svg" alt="Homezy Logo" />
