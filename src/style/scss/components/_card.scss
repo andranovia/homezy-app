@@ -22,6 +22,26 @@
       @media (max-width: 910px) {
         grid-template-columns: 1fr;
       }
+      &__col--2 {
+        grid-template-columns: repeat(2, 1fr);
+        @media (max-width: 910px) {
+          grid-template-columns: 1fr;
+        }
+      }
+      &__md-col--1 {
+        @media (max-width: 1440px) {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      &__md-col--3 {
+        @media (max-width: 1440px) {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        @media (max-width: 1024px) {
+          grid-template-columns: 1fr;
+        }
+      }
     }
   }
   &__item {
@@ -29,7 +49,7 @@
     flex-direction: column;
     border: 2px solid $color-secondary-dark-quinary;
     position: relative;
-    width: toRem(370);
+    width: auto;
     height: fit-content;
     border-radius: toRem(20);
 
@@ -144,7 +164,7 @@
       flex-direction: column;
       border: 2px solid $color-secondary-dark-primary;
       position: relative;
-      width: toRem(370);
+      width: auto;
       height: fit-content;
       border-radius: toRem(20);
 
@@ -222,7 +242,7 @@
   &__cities {
     overflow: hidden;
     border: 2px solid $color-secondary-dark-quinary;
-
+    width: auto;
     @media (max-width: 1024px) {
       display: flex;
       align-items: start;
@@ -236,11 +256,10 @@
 
       width: 100%;
 
-      
-    @media (max-width: 1024px) {
-      max-height: toRem(400);
-      object-fit: cover;
-    }
+      @media (max-width: 1024px) {
+        max-height: toRem(400);
+        object-fit: cover;
+      }
     }
 
     &--content {
@@ -273,7 +292,6 @@
       right: 0%;
       top: toRem(-10);
     }
-
 
     @media (max-width: 992px) {
       right: 25%;
@@ -345,7 +363,7 @@
   }
 
   &__agents {
-    min-width: toRem(320);
+    width: auto;
     position: relative;
     justify-content: space-between;
     padding: toRem(20) toRem(20);
@@ -398,7 +416,7 @@
 
   &__review {
     &--item {
-      width: toRem(500);
+      width: auto;
       display: flex;
       border-radius: toRem(15);
       border: 1px solid $color-secondary-dark-quinary;
@@ -407,7 +425,7 @@
       gap: toRem(40);
 
       @media (max-width: 1030px) {
-       width: auto;
+        width: auto;
       }
       &__rating {
         display: flex;

@@ -43,7 +43,7 @@ our business."
         <div className="testimonial__header">
           <h2>Kind Words From Our Customers</h2>
         </div>
-        <div className="card__wrapper--flex">
+        <div className="card__wrapper--grid card__wrapper--grid__col--2">
           {isMobile ? (
             <>{items[currentIndex]}</>
           ) : (

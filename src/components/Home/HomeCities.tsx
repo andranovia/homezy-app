@@ -30,7 +30,7 @@ const HomeCities = () => {
             Browse All Cities <img src="/placeholder.svg" alt="" />
           </span>
         </div>
-        <div className="card__wrapper--flex">
+        <div className="card__wrapper--grid card__wrapper--grid__md-col--3">
           {isMobile ? (
             <>{items[currentIndex]}</>
           ) : (

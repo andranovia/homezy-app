@@ -13,7 +13,7 @@ const HomeFeatured = () => {
           </span>
         </div>
         <HomeFeaturedCardMain />
-        <div className="card__wrapper--flex">
+        <div className="card__wrapper--grid card__wrapper--grid__md-col--1">
           {[...Array(3)].map((_, index) => (
             <Link to="/property/details" className="custom-link" key={index}>
               <HomeFeaturedCardItem />

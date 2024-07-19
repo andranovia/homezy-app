@@ -32,7 +32,7 @@ const HomeBenefits = () => {
             because we are very concerned about our consumer satisfaction
           </span>
         </div>
-        <div className="card__wrapper--flex">
+        <div className="card__wrapper--grid card__wrapper--grid__md-col--3">
           {isMobile ? (
             <>{items[currentIndex]}</>
           ) : (

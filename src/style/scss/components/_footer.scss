@@ -1,8 +1,13 @@
 .footer {
   background-color: white;
-  padding: 40px;
+  padding: toRem(80);
   @media only screen and (max-width: 1275px) {
     padding: 0
+  }
+
+  @media only screen and (min-width: 1600px) {
+    max-width:  toRem(1440);
+
   }
 
 

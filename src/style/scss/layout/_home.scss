@@ -636,10 +636,9 @@
 
   &__item {
     display: flex;
-    width: toRem(330);
+    width: auto;
     align-items: center;
     justify-content: space-between;
-    padding: toRem(20);
     border: 2px solid $color-secondary-dark-quinary;
     border-radius: toRem(15);
 
@@ -661,10 +660,7 @@
       display: flex;
       align-items: center;
       gap: toRem(20);
-
-      @media (max-width: 600px) {
-        padding: toRem(20);
-      }
+      padding: toRem(20);
       &__text {
         h4 {
           font-family: "Syne", sans-serif;
@@ -680,9 +676,9 @@
     }
 
     &--link {
-      @media (max-width: 600px) {
+
         padding: toRem(20);
-      }
+  
       span {
         display: flex;
         align-items: center;

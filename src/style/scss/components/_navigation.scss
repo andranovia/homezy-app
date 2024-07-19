@@ -6,7 +6,7 @@
   background-color: white;
 
   @media only screen and (min-width: 1600px) {
-    max-width:  toRem(1500);
+    max-width:  toRem(1440);
 
   }
   &__brand {
@@ -29,7 +29,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: toRem(20) toRem(120);
+    padding: toRem(20) toRem(160);
     
     @media only screen and (max-width: 1275px) {
       padding: toRem(20) toRem(40);
