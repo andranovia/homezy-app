@@ -1,10 +1,11 @@
 .home__section {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: toRem(80);
   margin: toRem(80) toRem(0);
   @media (max-width: 1200px) {
-    margin: toRem(40) toRem(0);
+    margin-top: toRem(40);
   }
 
 }
