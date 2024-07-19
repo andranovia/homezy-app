@@ -106,6 +106,8 @@
     }
 
     &--request {
+      grid-row: span 4;
+      max-height: toRem(540);
       padding: toRem(30);
       background-color: $color-brand-lavender-quinary;
       border-radius: toRem(15);
@@ -143,7 +145,7 @@
         flex-direction: column;
         gap: toRem(15);
         .request-tour {
-          font-size: $body-large-size   ;
+          font-size: $body-large-size;
           font-weight: bold;
         }
 
@@ -193,13 +195,11 @@
               font-family: "Hansen Grotesk", sans-serif;
             }
           }
-
         }
       }
     }
     &--accordion {
-  
-      font-family: 'Syne', sans-serif;
+      font-family: "Syne", sans-serif;
 
       &__title {
         font-size: $heading-6-size;
@@ -209,12 +209,12 @@
       }
 
       .accordion {
-        border: 2px solid $color-brand-lavender-quinary;
+        border: 2px solid $color-brand-lavender-quaternary;
         border-radius: toRem(15);
         background-color: white;
         margin-bottom: 10px;
         overflow: hidden;
-    
+
         &__header {
           padding: 15px;
           font-size: 18px;
@@ -224,47 +224,48 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-    
+
           .arrow {
             transform: rotate(90deg);
             transition: transform 0.3s ease;
           }
-    
+
           &.active .arrow {
             transform: rotate(270deg);
           }
         }
-    
+
         &__content {
           padding: 15px;
-        display: flex;
-        gap: toRem(10);
-        flex-direction: column  ;
-        hr {
+          display: flex;
+          gap: toRem(10);
+          flex-direction: column;
+          hr {
             opacity: 0.4;
-        }
+          }
           .section-title {
-            font-family: 'Hansen Grotesk', sans-serif;
+            font-family: "Hansen Grotesk", sans-serif;
             font-size: $body-normal-size;
             font-weight: light;
             margin-bottom: toRem(10);
             color: $color-secondary-dark-tertiary;
           }
-    
+
           .details {
-            font-family: 'Hansen Grotesk', sans-serif;
+            font-family: "Hansen Grotesk", sans-serif;
             display: grid;
             grid-template-columns: repeat(3, auto);
+       
             gap: toRem(20);
             font-weight: $font-weight-bold;
             width: 100%;
             font-size: $body-normal-size;
             margin-bottom: 10px;
-    
+
             &__item {
-                display: flex;
-                justify-content: start;
-                align-items: center;
+              display: flex;
+              justify-content: start;
+              align-items: center;
               margin-bottom: 5px;
             }
           }
@@ -280,7 +281,90 @@
         font-size: $heading-5-size;
       }
     }
+    &--agent {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(30);
+      h4 {
+        font-family: "Syne", sans-serif;
+        font-size: $heading-6-size;
+        font-weight: $font-weight-bold;
+        color: $color-secondary-dark-primary;
+      }
 
-   
+      &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $color-brand-lavender-quinary;
+        padding: toRem(25);
+        border: 2px solid $color-brand-lavender-quaternary;
+        border-radius: toRem(20);
+      }
+
+      &__contact {
+        display: flex;
+        align-items: center;
+        gap: toRem(20);
+        button {
+          padding: toRem(15) toRem(20);
+          background-color: transparent;
+        }
+      }
+    }
+
+    &--map {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(30);
+      h4 {
+        font-family: "Syne", sans-serif;
+        font-size: $heading-6-size;
+        font-weight: $font-weight-bold;
+        color: $color-secondary-dark-primary;
+      }
+    }
   }
+
+  &--map {
+    height: toRem(350);
+    border-radius: toRem(15);
+    filter: grayscale(1);
+  
+    .leaflet-control-container {
+      .leaflet-top {
+        bottom: 10% !important;
+        top: auto !important;
+      }
+      
+      .leaflet-left {
+        
+        left: auto !important;
+        right: 3% !important;
+        border-radius: toRem(15);
+        
+      }
+
+      .leaflet-control {
+        border: 0;
+        border-radius: toRem(20);
+      }
+      .leaflet-bar a {
+        border: 0
+      }
+
+      .leaflet-control-zoom-in {
+        border-top-right-radius: toRem(5);
+        border-top-left-radius: toRem(5);
+      }
+
+      .leaflet-control-zoom-out {
+        border-bottom-right-radius: toRem(5);
+        border-bottom-left-radius: toRem(5);
+      }
+    }
+  }
+  
 }
+
+

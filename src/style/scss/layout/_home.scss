@@ -372,40 +372,6 @@
               }
             }
 
-            &--right {
-              .contact {
-                &__info {
-                  display: flex;
-                  align-items: center;
-                  gap: toRem(20);
-
-                  img {
-                    width: toRem(30);
-                    padding: toRem(10);
-                    background-color: $color-brand-lavender-quaternary;
-                    border-radius: 100%;
-                  }
-                  h4 {
-                    font-family: "Hanken Grotesk", sans-serif;
-                    font-size: $body-large-size;
-                    font-weight: $font-weight-bold;
-                  }
-                  span {
-                    font-family: "Hanken Grotesk", sans-serif;
-                    font-size: $body-normal-size;
-                    color: $color-secondary-dark-tertiary;
-                  }
-                }
-
-                &__icon {
-                  img {
-                    width: toRem(30);
-                    background-color: white;
-                    border-radius: 0%;
-                  }
-                }
-              }
-            }
           }
 
           &__content {

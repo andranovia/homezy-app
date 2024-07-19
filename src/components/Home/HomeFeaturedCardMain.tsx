@@ -15,7 +15,7 @@ const HomeFeaturedCardMain = () => {
             <span>/month</span>
           </div>
           <div className="card__info__header--right">
-            <div className="contact__info">
+            <div className="agent__info">
               <div className="profile__img">
                 {" "}
                 <img src="/placeholder.svg" alt="" />
@@ -24,7 +24,7 @@ const HomeFeaturedCardMain = () => {
                 <h4>Edwin Martins</h4>
                 <span>Property Advisor</span>
               </div>
-              <div className="contact__icon">
+              <div className="agent__icon">
                 {" "}
                 <img src="/placeholder.svg" alt="" />
               </div>

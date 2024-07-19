@@ -1,4 +1,5 @@
 import HomeFeaturedCardItem from "../components/Home/HomeFeaturedCardItem";
+import PropertyMap from "../components/map/PropertyMap";
 import BaseLayout from "../Layouts/BaseLayout";
 
 const PropertyDetails = () => {
@@ -79,15 +80,9 @@ const PropertyDetails = () => {
                 <div className="tour--link">
                   <img src="/placeholder.svg" alt="" /> <h5>View Video Tour</h5>
                 </div>
-                
               </div>
               <hr />
             </div>
-
-            
-            <div className="property__details--feature"></div>
-            <div className="property__details--agent"></div>
-            <div className="property__details--map"></div>
           </div>
           <div className="property__details--request">
             <div className="property__details--request__pricing">
@@ -123,9 +118,10 @@ const PropertyDetails = () => {
             <button className="btn btn--primary">Schedule a Tour</button>
           </div>
 
-          
           <div className="property__details--accordion">
-            <div className="property__details--accordion__title">Property Details</div>
+            <div className="property__details--accordion__title">
+              Property Details
+            </div>
 
             <div className="accordion">
               <div className="accordion__header active">
@@ -160,7 +156,6 @@ const PropertyDetails = () => {
                   <div className="details__item">• Has Heating</div>
                   <div className="details__item">• Heating Fuel: Central</div>
                 </div>
-                
               </div>
             </div>
 
@@ -169,7 +164,6 @@ const PropertyDetails = () => {
                 Property Size
                 <span className="arrow">▶</span>
               </div>
-            
             </div>
 
             <div className="accordion">
@@ -177,7 +171,6 @@ const PropertyDetails = () => {
                 Land Area
                 <span className="arrow">▶</span>
               </div>
-            
             </div>
 
             <div className="accordion">
@@ -185,9 +178,29 @@ const PropertyDetails = () => {
                 Year Build
                 <span className="arrow">▶</span>
               </div>
-            
             </div>
           </div>
+          <div className="property__details--agent">
+            <h4>Listing By Agents</h4>
+            <div className="property__details--agent__info">
+              <div className="card__info__header--right">
+                <div className="agent__info">
+                  <div className="profile__img">
+                    <img src="/placeholder.svg" alt="" />
+                  </div>
+                  <div className="profile__info">
+                    <h4>Edwin Martins</h4>
+                    <span>Property Advisor</span>
+                  </div>
+                </div>
+              </div>
+              <div className="property__details--agent__contact">
+                <button className="btn btn--secondary">Ask Question</button>
+                <button className="btn btn--secondary">Contact Agent</button>
+              </div>
+            </div>
+          </div>
+          <div className="property__details--map">  <h4>Map View</h4><PropertyMap/></div>
         </div>
         <div className="property__details--others">
           <h2>Similiar Listings</h2>
