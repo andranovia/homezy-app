@@ -16,7 +16,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: toRem(60);
-      @media (max-width: 1440px) {
+      @media (max-width: 1191px) {
         grid-template-columns: 1fr 1fr;
       }
       @media (max-width: 910px) {
@@ -29,13 +29,13 @@
         }
       }
       &__md-col--1 {
-        @media (max-width: 1440px) {
+        @media (max-width: 1191px) {
           grid-template-columns: 1fr;
         }
       }
 
       &__md-col--3 {
-        @media (max-width: 1440px) {
+        @media (max-width: 1191px) {
           grid-template-columns: repeat(3, 1fr);
         }
         @media (max-width: 1024px) {
