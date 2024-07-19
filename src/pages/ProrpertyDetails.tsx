@@ -204,7 +204,7 @@ const PropertyDetails = () => {
         </div>
         <div className="property__details--others">
           <h2>Similiar Listings</h2>
-          <div className="card__wrapper--flex">
+          <div className="card__wrapper--grid card__wrapper--grid__md-col--1">
             <HomeFeaturedCardItem />
             <HomeFeaturedCardItem />
             <HomeFeaturedCardItem />
