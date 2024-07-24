@@ -46,7 +46,7 @@
     font-size: $heading-1-size;
     font-family: "Syne", sans-serif;
 
-    @media (max-width: 1400px) {
+    @media (max-width: 1430px) {
       font-size: 60px;
       line-height: $heading-1-line-height;
       width: 80%;
@@ -110,20 +110,20 @@
 
   &__cta {
     bottom: toRem(50);
-    width: fit-content;
+    width: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: toRem(40);
+    justify-content: space-around;
     margin-top: toRem(20);
     border: 2px solid $color-secondary-dark-primary;
     border-radius: 15px;
     padding: toRem(20);
 
+
     @media (max-width: 1200px) {
       width: 100%;
       padding: toRem(20) toRem(0);
-      justify-content: space-evenly;
+      justify-content: space-around;
     }
     @media (max-width: 840px) {
       padding: toRem(20);
@@ -141,6 +141,7 @@
       width: auto;
       align-items: start;
       flex-direction: column;
+      gap: toRem(20);
     }
 
     &--item {
@@ -157,6 +158,13 @@
         font-weight: $font-weight-regular;
         @media (max-width: 1200px) {
           font-size: $body-xsmall-size;
+        }
+      }
+
+      p {
+        font-size: $body-small-size;
+        @media (max-width: 900px) {
+          font-size: $body-small-size;
         }
       }
 
@@ -409,10 +417,12 @@
       align-items: start;
       overflow: hidden;
       border-radius: 15px;
+      height: toRem(420);
       border: 2px solid $color-secondary-dark-quinary;
 
       @media (max-width: 1160px) {
         flex-direction: column;
+        height: auto;
       }
 
       &__img {
@@ -438,13 +448,13 @@
       }
 
       &__info {
-        padding: toRem(30);
+        padding: toRem(24);
         display: flex;
         align-items: start;
-
         flex-direction: column;
-        gap: toRem(30);
+        gap: toRem(40);
         width: 100%;
+ 
 
         @media (max-width: 1200px) {
           padding: toRem(20);
@@ -455,6 +465,7 @@
           width: 100%;
 
           &__header {
+  
             display: flex;
             justify-content: space-between;
             width: 100%;
@@ -474,19 +485,23 @@
               span {
                 font-family: "Hanken Grotesk", sans-serif;
                 font-size: $body-normal-size;
+                font-weight: $font-weight-thin;
                 color: $color-secondary-dark-tertiary;
               }
             }
           }
 
           &__content {
+      
             display: flex;
             flex-direction: column;
-            gap: toRem(30);
+            gap: toRem(20);
           }
           &--title {
             font-family: "Syne", sans-serif;
             display: flex;
+            font-weight: $font-weight-semi-bold;
+            font-size: $body-large-size;
             flex-direction: column;
             gap: toRem(10);
 
@@ -495,16 +510,17 @@
             }
 
             span {
-              font-size: $body-normal-size;
+              font-size: $body-large-size;
               color: $color-secondary-dark-tertiary;
-              font-weight: $font-weight-regular;
+              font-weight: $font-weight-thin;
               font-family: "Hanken Grotesk", sans-serif;
             }
           }
           &--description {
             width: fit-content;
             font-family: "Hanken Grotesk", sans-serif;
-            font-size: $body-normal-size;
+            font-size: $body-large-size;
+            font-weight: $font-weight-thin;
             color: $color-secondary-dark-tertiary;
 
             span {

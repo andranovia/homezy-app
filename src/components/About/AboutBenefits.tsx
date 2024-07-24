@@ -1,8 +1,8 @@
 import { useState } from "react";
-import HomeBenefitsCardItem from "./HomeBenefitsCardItem";
+import HomeBenefitsCardItem from "../Home/HomeBenefitsCardItem";
 import { useMediaQuery } from "@uidotdev/usehooks";
 
-const HomeBenefits = () => {
+const AboutBenefits = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const isMobile = useMediaQuery("only screen and (max-width : 768px)");
 
@@ -10,6 +10,7 @@ const HomeBenefits = () => {
     <HomeBenefitsCardItem key="1" title="Affordable Price" description="We provide the best for you. The price we offer accordance with the quality we provide"/>,
     <HomeBenefitsCardItem key="2" title="Affordable Price 2" description="We provide the best for you. The price we offer accordance with the quality we provide"/>,
     <HomeBenefitsCardItem key="3" title="Affordable Price 3" description="We provide the best for you. The price we offer accordance with the quality we provide"/>,
+    <HomeBenefitsCardItem key="4" title="Affordable Price 4" description="We provide the best for you. The price we offer accordance with the quality we provide" />
   ];
 
   const handleNext = () => {
@@ -24,15 +25,14 @@ const HomeBenefits = () => {
 
   return (
     <div className="container">
-      <div className="benefits__wrapper">
-        <div className="benefits__header">
+      <div className="about__benefits--wrapper">
+        <div className="about__benefits--header">
           <h2>Comfort is Our Top Priority For You</h2>
           <span>
-            We guarantee that the products we sell will make our customers happy
-            because we are very concerned about our consumer satisfaction
+          We guarantee that the products we sell will make our customers happy because we are very concerned about our consumer satisfaction
           </span>
         </div>
-        <div className="card__wrapper--grid card__wrapper--grid__md-col--3">
+        <div className="card__wrapper--grid about__benefits--cards">
           {isMobile ? (
             <>{items[currentIndex]}</>
           ) : (
@@ -40,6 +40,7 @@ const HomeBenefits = () => {
               <HomeBenefitsCardItem key="1" title="Affordable Price" description="We provide the best for you. The price we offer accordance with the quality we provide"/>
               <HomeBenefitsCardItem key="2" title="Affordable Price" description="We provide the best for you. The price we offer accordance with the quality we provide"/>
               <HomeBenefitsCardItem key="3" title="Affordable Price" description="We provide the best for you. The price we offer accordance with the quality we provide" />
+              <HomeBenefitsCardItem key="4" title="Affordable Price" description="We provide the best for you. The price we offer accordance with the quality we provide" />
             </>
           )}
         </div>
@@ -56,4 +57,4 @@ const HomeBenefits = () => {
   );
 };
 
-export default HomeBenefits;
+export default AboutBenefits;

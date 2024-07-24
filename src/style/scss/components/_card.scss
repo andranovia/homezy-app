@@ -101,7 +101,7 @@
       span {
         font-family: "Hanken Grotesk", sans-serif;
         font-size: $body-normal-size;
-        font-weight: $font-weight-regular;
+        font-weight: $font-weight-thin;
         color: $color-secondary-dark-tertiary;
       }
     }
@@ -232,7 +232,7 @@
         span {
           font-family: "Hanken Grotesk", sans-serif;
           font-size: $body-normal-size;
-          font-weight: $font-weight-regular;
+          font-weight: $font-weight-thin;
           color: $color-secondary-dark-tertiary;
         }
       }
@@ -479,7 +479,7 @@
   &__facilities {
     border-radius: toRem(15);
     background-color: #f7f2ff;
-    padding: toRem(29);
+    padding: toRem(20);
     display: flex;
     justify-content: space-around;
     gap: toRem(40);
@@ -493,7 +493,7 @@
       h4 {
         font-family: "Hanken Grotesk", sans-serif;
         font-size: $body-large-size;
-        font-weight: 400;
+        font-weight: $font-weight-thin;
         color: $color-secondary-dark-tertiary;
 
         @media (max-width: 1375px) {

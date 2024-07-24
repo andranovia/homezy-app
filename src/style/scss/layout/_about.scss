@@ -1,0 +1,402 @@
+.about {
+  &__wrapper {
+    padding: toRem(40) toRem(0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
+  }
+
+  &__left {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: toRem(40);
+
+    @media (max-width: 1125px) {
+      width: 100%;
+    }
+
+    @media (max-width: 992px) {
+      margin-bottom: toRem(80);
+    }
+
+    hr {
+      width: 50%;
+    }
+  }
+
+  &__title {
+    width: 80%;
+    font-size: $heading-1-size;
+    font-family: "Syne", sans-serif;
+
+    @media (max-width: 1430px) {
+      font-size: 60px;
+      line-height: $heading-1-line-height;
+      width: 80%;
+    }
+
+    @media (max-width: 1200px) {
+      font-size: 56px;
+    }
+    @media (max-width: 1125px) {
+      width: 60%;
+    }
+    @media (max-width: 1060px) {
+      width: 54%;
+    }
+    @media (max-width: 1018px) {
+      font-size: toRem(54);
+    }
+
+    @media (max-width: 992px) {
+      font-size: toRem(60);
+      line-height: $heading-1-line-height;
+      width: 80%;
+    }
+    @media (max-width: 765px) {
+      font-size: $heading-2-size;
+      line-height: $heading-2-line-height;
+      width: 100%;
+    }
+    @media (max-width: 600px) {
+      font-size: $heading-3-size;
+      line-height: $heading-2-line-height;
+      width: 100%;
+    }
+
+    @media (max-width: 376px) {
+      font-size: $heading-5-size;
+      line-height: $heading-2-line-height;
+      width: 100%;
+    }
+  }
+  &__description {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: $body-xlarge-size;
+    font-weight: $font-weight-regular;
+    line-height: 30px;
+    color: $color-secondary-dark-secondary;
+    width: 70%;
+    @media (max-width: 768px) {
+      width: 80%;
+      font-size: toRem(22);
+      line-height: $body-xlarge-line-height-regular;
+    }
+
+    @media (max-width: 376px) {
+      width: 100%;
+    }
+  }
+
+  &__statistics {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: toRem(20);
+    align-items: center;
+    &--item {
+      display: flex;
+      gap: toRem(10);
+
+      flex-direction: column;
+      h3 {
+        font-family: "Syne", sans-serif;
+        font-size: $heading-2-size;
+        font-weight: $font-weight-semi-bold;
+        color: $color-secondary-dark-primary;
+      }
+      p {
+        font-family: "Hanken Grotesk", sans-serif;
+        font-size: $body-large-size;
+        font-weight: $font-weight-medium;
+        color: $color-secondary-dark-secondary;
+      }
+    }
+  }
+
+  &__right {
+    position: absolute;
+    right: toRem(200);
+    bottom: toRem(100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: toRem(20);
+
+    @media (min-width: 1600px) {
+      position: relative;
+      right: 0;
+      top: toRem(-80);
+    }
+    @media (max-width: 1200px) {
+      right: toRem(40);
+      top: toRem(120);
+    }
+    @media (max-width: 992px) {
+      right: toRem(0);
+      top: toRem(0);
+      position: relative;
+      width: 100%;
+      margin: toRem(80) toRem(0);
+    }
+  }
+
+  &__card {
+    position: absolute;
+    bottom: toRem(20);
+    width: toRem(280);
+    height: toRem(360);
+
+    @media (max-width: 1400px) {
+      width: toRem(180);
+      height: toRem(280);
+    }
+
+    @media (max-width: 600px) {
+      width: toRem(180);
+      height: toRem(280);
+    }
+
+    @media (max-width: 376px) {
+      width: toRem(160);
+    }
+
+    @media (max-width: 320px) {
+      width: toRem(130);
+    }
+    &__text {
+      margin-top: -30px;
+      padding: toRem(34) toRem(20) toRem(20) toRem(20);
+      background-color: $color-secondary-dark-primary;
+      border-bottom-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+      color: white;
+      font-size: small;
+      line-height: 20px;
+      font-weight: 300;
+      font-family: "Hanken Grotesk", sans-serif;
+      @media (max-width: 600px) {
+        font-size: x-small;
+      }
+    }
+
+    &--img {
+      width: toRem(230);
+      height: toRem(260);
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+      z-index: 10;
+      background-color: white;
+      padding-bottom: toRem(12);
+
+      padding-right: toRem(4);
+
+      @media (max-width: 1400px) {
+        width: toRem(180);
+        height: toRem(280);
+      }
+
+      @media (max-width: 600px) {
+        width: toRem(180);
+        height: toRem(280);
+      }
+
+      @media (max-width: 376px) {
+        width: toRem(160);
+      }
+
+      @media (max-width: 320px) {
+        width: toRem(130);
+      }
+    }
+    img {
+      background-size: cover;
+      width: 100%;
+    }
+  }
+
+  &__card:nth-child(2) {
+    width: toRem(260);
+    left: toRem(-40);
+    overflow: hidden;
+    border-radius: toRem(15);
+
+    z-index: 4;
+    img {
+      height: 100%;
+
+      width: auto;
+    }
+  }
+
+  &__card:nth-child(1) {
+    top: toRem(140);
+    left: toRem(-200);
+    height: toRem(300);
+    overflow: hidden;
+    border-radius: toRem(15);
+    width: toRem(480);
+  }
+
+  &__card:last-child {
+    position: relative;
+    right: toRem(-160);
+    border-radius: toRem(15);
+    width: toRem(250);
+    top: toRem(0);
+    height: toRem(300);
+    overflow: hidden;
+
+    @media (max-width: 1125px) {
+      top: toRem(95);
+      height: toRem(230);
+    }
+
+    @media (max-width: 600px) {
+      height: toRem(280);
+      top: toRem(120);
+    }
+
+    img {
+      min-height: 100%;
+      width: auto;
+    }
+  }
+  &__card {
+    &--wrapper {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: toRem(80);
+      height: toRem(305);
+      background-color: white;
+      border: 3px solid $color-secondary-dark-primary;
+      border-radius: toRem(15);
+    }
+    &--content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      padding: toRem(40);
+
+      h2 {
+        width: 40%;
+        font-family: "Syne", sans-serif;
+        font-size: $heading-3-size;
+        font-weight: $font-weight-bold;
+        color: $color-secondary-dark-primary;
+        @media (max-width: 1024px) {
+          font-size: $heading-5-size;
+        }
+        @media (max-width: 320px) {
+          font-size: $body-xlarge-size;
+        }
+      }
+      span {
+        font-family: "Hanken Grotesk", sans-serif;
+        font-weight: $font-weight-thin;
+        font-size: $body-large-size;
+        color: $color-secondary-dark-secondary;
+        width: 30%;
+        line-height: $body-xlarge-line-height-medium;
+        @media (max-width: 1024px) {
+          width: auto;
+          font-size: $body-xlarge-size;
+          line-height: $body-xlarge-line-height-regular;
+          font-weight: 100;
+        }
+
+        @media (max-width: 320px) {
+          font-size: $body-normal-size;
+          line-height: $body-normal-line-height-regular;
+        }
+      }
+    }
+  }
+
+  &__benefits {
+    &--wrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      flex-direction: column;
+      gap: toRem(80);
+
+    }
+
+    &--header {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: end;
+
+      @media (max-width: 1040px) {
+        align-items: start;
+        flex-direction: column;
+        gap: toRem(20);
+      }
+      h2 {
+        width: 40%;
+        & {
+          font-family: "Syne", sans-serif;
+        }
+        & {
+          font-size: $heading-3-size;
+        }
+        & {
+          font-weight: $font-weight-bold;
+        }
+      }
+      span {
+        width: 50%;
+        & {
+          line-height: $body-xlarge-line-height-regular;
+          font-family: "Hanken Grotesk", sans-serif;
+          font-size: $body-large-size;
+          font-weight: $font-weight-thin;
+          color: $color-secondary-dark-secondary;
+        }
+      }
+    }
+    &--cards {
+      grid-template-columns: repeat(4, 1fr) !important;
+      gap: toRem(32) !important;
+      width: 100%;
+
+      .card__icon__item:nth-child(2) {
+        margin-top: toRem(48);
+      }
+      .card__icon__item:nth-child(3) {
+        margin-top: toRem(96);
+      }
+      .card__icon__item:nth-child(4) {
+        margin-top: toRem(144);
+      }
+
+
+      .card__icon__item {
+        &--img {
+          margin: toRem(30) toRem(24) !important;
+          img {
+            width: toRem(80) !important;
+            height: toRem(80) !important;
+          }
+        }
+        &--content {
+          padding: toRem(24) toRem(24) !important;
+        }
+      }
+    }
+  }
+}
