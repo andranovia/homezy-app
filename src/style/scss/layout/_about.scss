@@ -332,7 +332,6 @@
       width: 100%;
       flex-direction: column;
       gap: toRem(80);
-
     }
 
     &--header {
@@ -384,7 +383,6 @@
         margin-top: toRem(144);
       }
 
-
       .card__icon__item {
         &--img {
           margin: toRem(30) toRem(24) !important;
@@ -398,5 +396,104 @@
         }
       }
     }
+  }
+
+  &__agents {
+    &--wrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      flex-direction: column;
+      gap: toRem(80);
+    }
+
+    &--header {
+      display: flex;
+      justify-content: center;
+      h2 {
+        & {
+          font-family: "Syne", sans-serif;
+        }
+        & {
+          font-size: $heading-3-size;
+        }
+        & {
+          font-weight: $font-weight-bold;
+        }
+      }
+    }
+
+    &--contents {
+      gap: toRem(30) !important;
+      .agent {
+        &__card {
+          width: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          
+          &--img {
+            width: auto;
+            background-color: $color-brand-lavender-quaternary;
+            height: toRem(350);
+            border-radius: toRem(15);
+            overflow: hidden;
+            img {
+              width: 100%;
+              height: 100%;
+          
+            }
+          }
+
+          .card__profile {
+            width: toRem(190) !important;
+            height: toRem(120) !important;
+            position: relative;
+            top: toRem(-80);
+
+            &__text {
+        
+              h6 {
+                font-family: "Syne", sans-serif;
+                font-size: $heading-6-size;
+                font-weight: $font-weight-semi-bold;
+              }
+              p {
+                font-family: "Hanken Grotesk", sans-serif;
+                font-size: $body-large-size;
+                font-weight: $font-weight-thin;
+                color: $color-secondary-dark-tertiary;
+              }
+        
+              &--social {
+          
+                margin-top: toRem(24);
+                display: flex;
+                gap: toRem(16);
+                align-items: center;
+        
+                &__item {
+
+                  width: toRem(26);
+                  display: flex;
+                  align-items: center; 
+                  justify-content: center;
+                  height: toRem(26);
+                  padding: toRem(4);
+                  background-color: $color-secondary-dark-primary;
+                  border-radius: 100%;
+        
+                  img {
+                    width: toRem(15);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+   
   }
 }
