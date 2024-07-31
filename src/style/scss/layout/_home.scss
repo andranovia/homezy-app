@@ -564,15 +564,6 @@
     }
     h2 {
       width: 40%;
-      @media (max-width: 1040px) {
-        width: 100%;
-      }
-
-      @media (max-width: 600px) {
-        top: 36%;
-
-        font-size: $heading-5-size;
-      }
       & {
         font-family: "Syne", sans-serif;
       }
@@ -582,6 +573,16 @@
       & {
         font-weight: $font-weight-bold;
       }
+      @media (max-width: 1040px) {
+        width: 100%;
+      }
+
+      @media (max-width: 600px) {
+        top: 36%;
+
+        font-size: $heading-5-size;
+      }
+      
     }
     span {
       width: 35%;

@@ -30,7 +30,12 @@
       }
       &__col--4 {
         grid-template-columns: repeat(4, 1fr);
-        @media (max-width: 910px) {
+        gap: toRem(60);
+        @media (max-width: 1125px) {
+          grid-template-columns: repeat(2, 1fr);
+       
+        }
+        @media (max-width: 768px) {
           grid-template-columns: 1fr;
         }
       }
@@ -208,6 +213,7 @@
 
         border-bottom-left-radius: toRem(20);
         border-bottom-right-radius: toRem(20);
+        border-top-right-radius: toRem(20);
         background-color: white;
         padding: toRem(20) toRem(40) toRem(40);
         display: flex;

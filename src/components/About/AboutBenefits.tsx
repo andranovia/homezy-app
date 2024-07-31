@@ -32,7 +32,7 @@ const AboutBenefits = () => {
           We guarantee that the products we sell will make our customers happy because we are very concerned about our consumer satisfaction
           </span>
         </div>
-        <div className="card__wrapper--grid about__benefits--cards">
+        <div className="card__wrapper--grid card__wrapper--grid__col--4 about__benefits--cards">
           {isMobile ? (
             <>{items[currentIndex]}</>
           ) : (

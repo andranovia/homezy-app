@@ -5,7 +5,7 @@ const AboutHero = () => {
             <div className="about__wrapper">
                 <div className="about__left">
                     <h1 className="about__title">
-                        We know how valuable a house is.
+                        We know how <br/> valuable a house is.
                     </h1>
                     <p className="about__description">
                         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
