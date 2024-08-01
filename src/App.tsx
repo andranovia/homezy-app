@@ -6,12 +6,11 @@ import HomeFeatured from "./components/Home/HomeFeatured";
 import HomeFeaturedCategory from "./components/Home/HomeFeaturedCategory";
 import HomeHero from "./components/Home/HomeHero";
 import HomeTestimonial from "./components/Home/HomeTestimonial";
-import HomeNewsletter from "./components/Home/HomeNewsletter";
 import BaseLayout from "./Layouts/BaseLayout";
 
 function App() {
   return (
-    <BaseLayout>
+    <BaseLayout  newsletter={true}>
       <HomeHero />
       <HomeFeatured />
       <HomeBenefits />
@@ -19,7 +18,6 @@ function App() {
       <HomeCities />
       <HomeAgents />
       <HomeTestimonial />
-      <HomeNewsletter />
     </BaseLayout>
   );
 }

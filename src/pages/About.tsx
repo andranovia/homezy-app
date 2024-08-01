@@ -7,7 +7,7 @@ import AboutAgents from "../components/About/AboutAgents";
 
 const About = () => {
   return (
-    <BaseLayout>
+    <BaseLayout newsletter={true}>
       <AboutHero />
       <AboutCard/>
       <AboutBenefits/>

@@ -4,7 +4,7 @@ import BaseLayout from "../Layouts/BaseLayout";
 
 const PropertyDetails = () => {
   return (
-    <BaseLayout>
+    <BaseLayout  newsletter={false}>
       <div className="property__details--wrapper container">
         <div className="property__details--images">
           <img

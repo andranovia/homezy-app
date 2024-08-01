@@ -6,7 +6,7 @@ const Navigation = () => {
       <div className="navbar__wrapper">
         <div className="navbar__brand">
           <img src="/placeholder.svg" alt="Homezy Logo" />
-          <Link to={"#"} className="custom-link">
+          <Link to={"/"} className="custom-link">
             Homezy
           </Link>
         </div>
@@ -35,7 +35,7 @@ const Navigation = () => {
           </ul>
         </div>
         <div className="navbar__contact">
-          <Link to={"#"} className="custom-link">
+          <Link to={"/contact"} className="custom-link">
             Contact Us
           </Link>
         </div>
