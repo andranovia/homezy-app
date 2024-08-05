@@ -1,4 +1,4 @@
-import React from "react";
+
 import Navigation from "../components/Navigation/Index";
 import Footer from "../components/Footer/Footer";
 import Newsletter from "../components/Newsletter";
