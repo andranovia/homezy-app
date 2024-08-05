@@ -1,3 +1,151 @@
 .pricing {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: toRem(80);
+  }
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: toRem(24);
+
+    h2 {
+      font-weight: $font-weight-semi-bold;
+      font-size: $heading-1-size;
+      line-height: $heading-1-line-height;
+      font-family: "Syne", sans-serif;
+      text-align: center;
+      color: $color-secondary-dark-primary;
+      @media screen and (max-width: 826px) {
+        font-size: $heading-3-size;
+        line-height: $heading-3-line-height;
+      }
+    }
+    p {
+      font-weight: $font-weight-thin;
+      text-align: center;
+      width: 837px;
+      font-size: $body-xlarge-size;
+      line-height: $body-xlarge-line-height-regular;
+      font-family: "Hanken Grotesk", sans-serif;
+      color: $color-secondary-dark-primary;
+      @media screen and (max-width: 826px) {
+        font-size: $body-large-size;
+        text-align: center;
+        line-height: $body-large-line-height-regular;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: toRem(24);
+  }
+
+  &__description {
     
+    font-size: $body-xlarge-size;
+    line-height: $body-xlarge-line-height-regular;
+    font-weight:  $font-weight-thin;
+    font-family: "Hanken Grotesk", sans-serif;
+    color: $color-secondary-dark-tertiary;
+}
+
+  &__card {
+    height: toRem(612);
+    display: flex;
+    flex-direction: column;
+    padding: toRem(24);
+    gap: toRem(30);
+    border: 1px solid $color-brand-lavender-tertiary;
+    border-radius: toRem(15);
+
+    h1 {
+      font-weight: $font-weight-semi-bold;
+      font-size: 64px;
+      line-height: $heading-1-line-height;
+      font-family: "Syne", sans-serif;
+      color: $color-secondary-dark-primary;
+      letter-spacing: -4%;
+    }
+
+
+    &--header {
+        display: flex;
+        align-items: center;
+        gap: toRem(20);
+
+        .header{
+            &__icon {
+                width: toRem(50);
+                height: toRem(50);
+                border-radius: toRem(100);
+                background-color: black;
+            }
+            &__title {
+                display: flex;
+                flex-direction: column;
+                h5 {
+                    font-weight: $font-weight-semi-bold;
+                    font-size: $heading-6-size;
+                    line-height: $heading-6-line-height;
+                    font-family: "Syne", sans-serif;
+                    color: $color-secondary-dark-primary;
+                }
+                p {
+                    font-weight: $font-weight-thin;
+                    font-size: $body-xlarge-size;
+                    line-height: $body-xlarge-line-height-regular;
+                    font-family: "Hanken Grotesk", sans-serif;
+                    color: $color-secondary-dark-tertiary;
+                }
+            }
+        }
+    }
+
+    &--benefits {
+        .benefits__item {
+            display: flex;
+            align-items: center;
+            gap: toRem(16);
+
+            img {
+                width: toRem(20);
+                height: toRem(20);
+            }
+            p {
+                font-weight: $font-weight-thin;
+                font-size: $body-large-size;
+                line-height: $body-large-line-height-regular;
+                font-family: "Hanken Grotesk", sans-serif;
+                color: $color-secondary-dark-tertiary;
+            }
+        }
+    }   
+  }
+
+  &__card:nth-child(2){
+    height: toRem(675);
+    box-shadow: rgba($color-brand-lavender-secondary, 0.4) 0px 8px 140px;
+    border: 2px solid $color-secondary-dark-primary;
+    .popular {
+        padding: toRem(8);
+        place-self: flex-end;
+        text-align: center;
+        border-radius: toRem(8);
+        width: toRem(126);
+        background-color: $color-brand-lavender-primary;
+        color: white;
+        font-family: "Hanken Grotesk", sans-serif;
+        font-size: $body-small-size;
+        text-transform: uppercase;
+    }
+  }
+
 }
