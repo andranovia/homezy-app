@@ -1,0 +1,28 @@
+.pagination {
+    &__wrapper {
+        display: flex;
+        margin-top: toRem(20);
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        padding: toRem(3);
+        gap: toRem(10);
+        height: auto;
+    }
+
+    &__button {
+        padding: toRem(3);
+        border-radius: toRem(10);
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        img {
+            height: toRem(24);
+        }
+    }
+    &__list {
+        padding: toRem(8) toRem(12);
+        border: none;
+        border-radius: toRem(10);
+    }
+}

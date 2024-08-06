@@ -1,0 +1,90 @@
+.agent {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(40);
+        margin-top: toRem(40);
+    }
+
+    &__header {
+        h2 {
+            font-family: "Syne", sans-serif;
+            font-size: $heading-3-size;
+            font-weight: $font-weight-bold;
+            @media (max-width: 600px) {
+                font-size: $heading-6-size;
+            }
+        }
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: toRem(32);
+        width: 100%;
+
+
+        .card__agents {
+            padding: toRem(0);
+            border: none;
+            height: auto;
+            top: 0;
+
+            .card__profile__text {
+                h6 {
+                    font-size: $heading-6-size;
+                    font-family: 'Syne', sans-serif;
+                    line-height: $heading-6-line-height;
+                }
+                p{
+                    font-size: $body-large-size;
+                    font-family: 'Hanken Grotesk', sans-serif;
+                    line-height: $body-large-line-height-regular;
+                    font-weight: $font-weight-thin;
+                }
+
+                &--social {
+                    margin-top: toRem(24);
+                    gap: toRem(12);
+
+                    &__item {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: toRem(14);
+                        height: toRem(14);
+                    }
+                }
+            }
+        }
+    }
+
+    
+    &__card {
+
+        &--item {
+            padding: toRem(20);
+      
+            display: flex;
+            height: auto;
+            gap: toRem(24);
+            flex-direction: column;
+            overflow: hidden;
+            border-radius: toRem(15);
+            border: 1px solid $color-brand-lavender-quaternary;
+        }
+
+        &--img {
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+            
+            
+            img {
+                width: 100%;
+                border-radius: toRem(15);
+                height: auto;
+            }
+        }
+      
+    }
+}
