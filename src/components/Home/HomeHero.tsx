@@ -1,5 +1,3 @@
-
-
 const HomeHero = () => {
   return (
     <div className="container">
@@ -13,33 +11,34 @@ const HomeHero = () => {
             have a new comfortable and suitable place to live
           </p>
           <div className="hero__cta">
-            <div className="hero__cta--item">
-              <div className="hero__cta--item__img">
-                <img src="/placeholder.svg" alt="" />
+              <div className="hero__cta--item">
+                <div className="hero__cta--item__img">
+                  <img src="/placeholder.svg" alt="" />
+                </div>
+                <div className="hero__cta--item__text">
+                  <h6>Location</h6>
+                  <p>California, US</p>
+                </div>
               </div>
-              <div className="hero__cta--item__text">
-                <h6>Location</h6>
-                <p>California, US</p>
+              <div className="hero__cta--item">
+                <div className="hero__cta--item__img">
+                  <img src="/placeholder.svg" alt="" />
+                </div>
+                <div className="hero__cta--item__text">
+                  <h6>Price</h6>
+                  <p>$1500-$2500</p>
+                </div>
               </div>
-            </div>
-            <div className="hero__cta--item">
-              <div className="hero__cta--item__img">
-                <img src="/placeholder.svg" alt="" />
+              <div className="hero__cta--item">
+                <div className="hero__cta--item__img">
+                  <img src="/placeholder.svg" alt="" />
+                </div>
+                <div className="hero__cta--item__text">
+                  <h6>Type of Property</h6>
+                  <p>Apartment</p>
+                </div>
               </div>
-              <div className="hero__cta--item__text">
-                <h6>Price</h6>
-                <p>$1500-$2500</p>
-              </div>
-            </div>
-            <div className="hero__cta--item">
-              <div className="hero__cta--item__img">
-                <img src="/placeholder.svg" alt="" />
-              </div>
-              <div className="hero__cta--item__text">
-                <h6>Type of Property</h6>
-                <p>Apartment</p>
-              </div>
-            </div>
+       
             <div className="hero__cta--btn">
               <button className="btn btn--primary">Browse</button>
             </div>

@@ -7,18 +7,19 @@
   @media (max-width: 1200px) {
     margin-top: toRem(40);
   }
-
 }
 
 .hero {
   &__wrapper {
-    padding: toRem(40) toRem(0);
+    padding: toRem(56) toRem(0);
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     @media (max-width: 992px) {
       flex-direction: column;
+      padding: toRem(30) toRem(0);
     }
   }
 
@@ -29,43 +30,36 @@
     flex-direction: column;
     gap: toRem(20);
 
-    @media (max-width: 1125px) {
+    @media (max-width: 992px) {
       width: 100%;
-   
     }
 
-    
     @media (max-width: 992px) {
       margin-bottom: toRem(80);
-   
     }
   }
 
   &__title {
-    width: 80%;
     font-size: $heading-1-size;
     font-family: "Syne", sans-serif;
+    width: 84%;
+    font-weight: $font-weight-semi-bold;
 
-    @media (max-width: 1430px) {
+    @media (max-width: 1439.98px) {
+      
       font-size: 60px;
       line-height: $heading-1-line-height;
-      width: 80%;
     }
 
     @media (max-width: 1200px) {
-
+      width: 80%;
       font-size: 56px;
     }
-    @media (max-width: 1125px) {
-      width: 60%;
-    }
-    @media (max-width: 1060px) {
-      width: 54%;
-    }
+
     @media (max-width: 1018px) {
       font-size: toRem(54);
     }
-    
+
     @media (max-width: 992px) {
       font-size: toRem(60);
       line-height: $heading-1-line-height;
@@ -74,7 +68,6 @@
     @media (max-width: 765px) {
       font-size: $heading-2-size;
       line-height: $heading-2-line-height;
-      width: 100%;
     }
     @media (max-width: 600px) {
       font-size: $heading-3-size;
@@ -82,11 +75,12 @@
       width: 100%;
     }
 
-    @media (max-width: 376px) {
+    @media (max-width: 374.98px) {
       font-size: $heading-5-size;
       line-height: $heading-2-line-height;
       width: 100%;
     }
+
   }
   &__description {
     font-family: "Hanken Grotesk", sans-serif;
@@ -94,51 +88,43 @@
     font-weight: $font-weight-regular;
     line-height: 30px;
     color: $color-secondary-dark-secondary;
-    width: 50%;
-    @media (max-width: 768px) {
-      width: 80%;
+    width: 60%;
+    @media (max-width: 992px) {
+      width: 100%;
       font-size: toRem(22);
       line-height: $body-xlarge-line-height-regular;
     }
 
-    
     @media (max-width: 376px) {
-
       width: 100%;
     }
   }
 
   &__cta {
     bottom: toRem(50);
-    width: auto;
+    width: toRem(714);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: toRem(20);
     border: 2px solid $color-secondary-dark-primary;
     border-radius: 15px;
     padding: toRem(20);
 
-
     @media (max-width: 1200px) {
-      width: 100%;
       padding: toRem(20) toRem(0);
       justify-content: space-around;
-    }
-    @media (max-width: 840px) {
-      padding: toRem(20);
-    }
-
-    @media (max-width: 1125px) {
       margin-top: toRem(80);
     }
 
     @media (max-width: 992px) {
       margin-top: toRem(40);
+      width: 100%;
     }
 
     @media (max-width: 840px) {
       width: auto;
+      padding: toRem(20);
       align-items: start;
       flex-direction: column;
       gap: toRem(20);
@@ -146,8 +132,6 @@
 
     &--item {
       font-family: "Hanken Grotesk", sans-serif;
-      font-size: $body-large-size;
-      font-weight: $font-weight-bold;
 
       display: flex;
       align-items: center;
@@ -155,14 +139,17 @@
 
       h6 {
         color: $color-secondary-dark-tertiary;
-        font-weight: $font-weight-regular;
+        font-size: $body-small-size;
+        font-weight: $font-weight-thin;
         @media (max-width: 1200px) {
           font-size: $body-xsmall-size;
         }
       }
 
       p {
-        font-size: $body-small-size;
+        font-size: $body-large-size;
+        font-weight: $font-weight-bold;
+        line-height: $body-normal-line-height-regular;
         @media (max-width: 900px) {
           font-size: $body-small-size;
         }
@@ -179,7 +166,7 @@
 
         img {
           width: auto;
-          height: toRem(30);
+          height: toRem(20);
         }
       }
     }
@@ -189,6 +176,7 @@
         width: 100%;
       }
       button {
+        font-weight: $font-weight-semi-bold;
         padding: toRem(15) toRem(30);
         @media (max-width: 840px) {
           padding: toRem(15) toRem(0);
@@ -200,12 +188,16 @@
 
   &__right {
     position: absolute;
-    right: toRem(100);
-    top: toRem(140);
+    right: toRem(120);
+    top: toRem(120);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: toRem(20);
+    margin-top: toRem(20);
+    @media (max-width: 1400px) {
+      margin-top: toRem(0);
+    }
 
     @media (min-width: 1600px) {
       position: relative;
@@ -227,6 +219,7 @@
 
   &__card {
     position: relative;
+    margin-top: toRem(32);
     bottom: toRem(20);
     width: toRem(230);
     height: toRem(360);
@@ -237,7 +230,6 @@
       height: toRem(280);
     }
 
-
     @media (max-width: 600px) {
       width: toRem(180);
       height: toRem(280);
@@ -245,6 +237,7 @@
 
     @media (max-width: 376px) {
       width: toRem(160);
+    
     }
 
     @media (max-width: 320px) {
@@ -290,6 +283,7 @@
 
       @media (max-width: 376px) {
         width: toRem(160);
+        height: toRem(190);
       }
 
       @media (max-width: 320px) {
@@ -307,9 +301,15 @@
       @media (max-width: 600px) {
         height: toRem(230);
       }
+      @media (max-width: 376px) {
+        height: toRem(180);
+      }
     }
     img {
       height: toRem(270);
+      @media (max-width: 376px) {
+        height: toRem(180);
+      }
     }
   }
 
@@ -320,12 +320,13 @@
   }
 
   &__card:last-child {
+    border-radius: toRem(30);
     position: relative;
     top: toRem(120);
     height: toRem(300);
     overflow: hidden;
 
-    @media (max-width: 1125px) {
+    @media (max-width: 1200px) {
       top: toRem(95);
       height: toRem(230);
     }
@@ -333,6 +334,9 @@
     @media (max-width: 600px) {
       height: toRem(280);
       top: toRem(120);
+    }
+    @media (max-width: 376px) {
+      height: toRem(220);
     }
 
     & {
@@ -343,6 +347,9 @@
       height: toRem(310);
       @media (max-width: 600px) {
         height: toRem(290);
+      }
+      @media (max-width: 376px) {
+        height: toRem(220);
       }
       & {
         border-radius: 20px;
@@ -389,7 +396,7 @@
       font-size: $heading-3-size;
       font-weight: $font-weight-bold;
       @media (max-width: 600px) {
-        font-size: $heading-5-size;
+        font-size: toRem(28);
       }
     }
     span {
@@ -415,10 +422,10 @@
     &--card {
       display: flex;
       align-items: start;
+      height: toRem(420);
       overflow: hidden;
       border-radius: 15px;
-      height: toRem(420);
-      border: 2px solid $color-secondary-dark-quinary;
+      border: 1px solid $color-brand-lavender-quaternary;
 
       @media (max-width: 1160px) {
         flex-direction: column;
@@ -427,10 +434,9 @@
 
       &__img {
         object-fit: cover;
-        max-width: toRem(500);
-        min-height: toRem(504);
-        width: 100%;
         overflow: hidden;
+        width: 80%;
+        min-height: toRem(420);
         @media (max-width: 1160px) {
           max-width: none;
           height: toRem(400);
@@ -452,9 +458,14 @@
         display: flex;
         align-items: start;
         flex-direction: column;
-        gap: toRem(40);
+        gap: toRem(20);
+        height: toRem(372);
+        justify-content: space-between;
         width: 100%;
- 
+
+        @media (max-width: 1160px) {
+         height: auto;
+        }
 
         @media (max-width: 1200px) {
           padding: toRem(20);
@@ -465,7 +476,6 @@
           width: 100%;
 
           &__header {
-  
             display: flex;
             justify-content: space-between;
             width: 100%;
@@ -478,7 +488,7 @@
               display: flex;
               align-items: center;
               h4 {
-                font-family: "Hanken Grotesk", sans-serif;
+                font-family: "Syne", sans-serif;
                 font-size: $heading-3-size;
                 font-weight: $font-weight-bold;
               }
@@ -492,10 +502,10 @@
           }
 
           &__content {
-      
             display: flex;
             flex-direction: column;
-            gap: toRem(20);
+            
+            gap: toRem(30);
           }
           &--title {
             font-family: "Syne", sans-serif;
@@ -514,14 +524,32 @@
               color: $color-secondary-dark-tertiary;
               font-weight: $font-weight-thin;
               font-family: "Hanken Grotesk", sans-serif;
+
+              @media (max-width: 600px) {
+                font-size: $body-normal-size;
+              }
             }
           }
           &--description {
             width: fit-content;
+
             font-family: "Hanken Grotesk", sans-serif;
             font-size: $body-large-size;
             font-weight: $font-weight-thin;
+            overflow: hidden;
+            display: -webkit-box;
+            line-clamp: 3;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            text-overflow: ellipsis;
             color: $color-secondary-dark-tertiary;
+
+            @media (max-width: 600px) {
+              line-clamp: none;
+              -webkit-line-clamp: none;
+              -webkit-box-orient: horizontal;
+              text-overflow: clip;
+            }
 
             span {
               font-weight: $font-weight-bold;
@@ -563,7 +591,7 @@
       gap: toRem(20);
     }
     h2 {
-      width: 40%;
+      width: 50%;
       & {
         font-family: "Syne", sans-serif;
       }
@@ -580,12 +608,13 @@
       @media (max-width: 600px) {
         top: 36%;
 
-        font-size: $heading-5-size;
+        font-size: toRem(28);
       }
-      
     }
     span {
-      width: 35%;
+      width: 40%;
+      color: $color-secondary-dark-secondary;
+      font-weight: $font-weight-thin;
       @media (max-width: 1040px) {
         width: 70%;
       }
@@ -635,7 +664,7 @@
       font-size: $heading-3-size;
       font-weight: $font-weight-bold;
       @media (max-width: 600px) {
-        font-size: $heading-5-size;
+        font-size: toRem(28);
       }
     }
     span {
@@ -656,7 +685,7 @@
     width: auto;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid $color-secondary-dark-quinary;
+    border: 1px solid $color-brand-lavender-quaternary;
     border-radius: toRem(15);
 
     @media (max-width: 1440px) {
@@ -693,9 +722,8 @@
     }
 
     &--link {
+      padding: toRem(20);
 
-        padding: toRem(20);
-  
       span {
         display: flex;
         align-items: center;
@@ -751,7 +779,7 @@
       font-weight: $font-weight-bold;
 
       @media (max-width: 600px) {
-        font-size: $heading-5-size;
+        font-size: toRem(28);
       }
     }
     span {
@@ -803,7 +831,7 @@
       font-weight: $font-weight-bold;
 
       @media (max-width: 600px) {
-        font-size: $heading-5-size;
+        font-size: toRem(28);
       }
     }
     span {
@@ -818,6 +846,8 @@
       font-weight: $font-weight-bold;
     }
   }
+
+ 
 }
 
 .testimonial {
@@ -847,5 +877,3 @@
     }
   }
 }
-
-

@@ -15,7 +15,7 @@
     &--grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: toRem(60);
+      gap: toRem(32);
       @media (max-width: 1191px) {
         grid-template-columns: 1fr 1fr;
       }
@@ -30,7 +30,6 @@
       }
       &__col--4 {
         grid-template-columns: repeat(4, 1fr);
-        gap: toRem(60);
         @media (max-width: 1125px) {
           grid-template-columns: repeat(2, 1fr);
        
@@ -58,7 +57,7 @@
   &__item {
     display: flex;
     flex-direction: column;
-    border: 2px solid $color-secondary-dark-quinary;
+    border: 1px solid $color-brand-lavender-quaternary;
     position: relative;
     width: auto;
     height: fit-content;
@@ -85,13 +84,14 @@
       border-bottom-left-radius: toRem(20);
       border-bottom-right-radius: toRem(20);
       background-color: white;
-      padding: toRem(40) toRem(20) toRem(30);
+      padding: toRem(20) toRem(20) toRem(30);
       display: flex;
       gap: toRem(20);
       flex-direction: column;
 
       hr {
         opacity: 30%;
+        border: 1px solid $color-brand-lavender-quaternary;
       }
     }
 
@@ -103,6 +103,10 @@
         font-family: "Syne", sans-serif;
         font-size: $heading-5-size;
         font-weight: $font-weight-bold;
+        
+        @media (max-width: 574px) {
+          font-size: $heading-6-size;
+        }
       }
       h4 {
         font-family: "Syne", sans-serif;
@@ -220,9 +224,6 @@
         gap: toRem(20);
         flex-direction: column;
 
-        @media (max-width: 1440px) {
-          padding: toRem(20) toRem(20) toRem(20);
-        }
         @media (max-width: 1024px) {
           padding: 0;
         }
@@ -253,7 +254,7 @@
 
   &__cities {
     overflow: hidden;
-    border: 2px solid $color-secondary-dark-quinary;
+    border: 1px solid $color-brand-lavender-quaternary;
     width: auto;
     @media (max-width: 1024px) {
       display: flex;
@@ -290,15 +291,16 @@
   &__profile {
     position: absolute;
     display: flex;
+    margin-top: toRem(32);
     z-index: 20;
     align-items: center;
     gap: toRem(40);
     padding: toRem(14);
     background-color: white;
-    border-radius: 20px;
+    border-radius: 30px;
     border: 3px solid $color-secondary-dark-primary;
     top: toRem(10);
-    right: 15%;
+    right: 10%;
 
     @media (max-width: 1400px) {
       right: 0%;
@@ -379,9 +381,9 @@
     position: relative;
     justify-content: space-between;
     padding: toRem(20) toRem(20);
-    gap: toRem(60);
-    border: 2px solid $color-secondary-dark-quinary;
+    border: 1px solid $color-brand-lavender-quaternary;
     right: auto;
+    gap: 0;
 
     @media (max-width: 600px) {
       min-width: auto;
@@ -389,7 +391,7 @@
 
     &__text {
       h6 {
-        font-family: "Hanken Grotesk", sans-serif;
+        font-family: "Syne", sans-serif;
         font-size: $body-xlarge-size;
         font-weight: $font-weight-bold;
         @media (max-width: 910px) {
@@ -408,6 +410,9 @@
     }
 
     &__social {
+      display: flex;
+      align-items: center;
+      gap: toRem(10);
       &--item {
         padding: toRem(6);
         display: flex;
@@ -431,7 +436,7 @@
       width: auto;
       display: flex;
       border-radius: toRem(15);
-      border: 1px solid $color-secondary-dark-quinary;
+      border: 1px solid $color-brand-lavender-quaternary;
       padding: toRem(30);
       flex-direction: column;
       gap: toRem(40);
@@ -478,6 +483,10 @@
             font-family: "Syne", sans-serif;
             font-size: $body-xlarge-size;
             font-weight: $font-weight-bold;
+
+            @media (max-width: 426px) {
+              font-size: $body-normal-size;
+            }
           }
           span {
             font-family: "Hanken Grotesk", sans-serif;
@@ -494,7 +503,7 @@
     padding: toRem(20);
     display: flex;
     justify-content: space-around;
-    gap: toRem(40);
+    row-gap: toRem(40);
 
     @media (max-width: 700px) {
       display: grid;

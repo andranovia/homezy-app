@@ -39,10 +39,7 @@ const HomeFeaturedCardMain = () => {
           </div>
           <div className="card__info--description">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores aliquid magnam omnis. Dolore quisquam aliquid
-              doloremque quos ipsum ut, amet vel ab maxime iste, magni fugit
-              magnam odio minus. <span>Read More</span>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation <span>Read More</span>
             </p>
           </div>
           <div className="card__facilities">

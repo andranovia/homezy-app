@@ -25,6 +25,10 @@
         font-size: $heading-3-size;
         line-height: $heading-3-line-height;
       }
+      @media screen and (max-width: 426px) {
+        font-size: $heading-5-size;
+        line-height: $heading-5-line-height;
+      }
     }
     p {
       font-weight: $font-weight-thin;
@@ -39,6 +43,12 @@
         width: auto;
         text-align: center;
         line-height: $body-large-line-height-regular;
+      }
+      @media screen and (max-width: 426px) {
+        font-size: $body-normal-size;
+        width: auto;
+        text-align: center;
+        line-height: $body-normal-line-height-regular;
       }
     }
   }

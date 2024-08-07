@@ -4,7 +4,7 @@ import BaseLayout from "../Layouts/BaseLayout";
 
 const PropertyDetails = () => {
   return (
-    <BaseLayout  newsletter={false}>
+    <BaseLayout newsletter={false}>
       <div className="property__details--wrapper container">
         <div className="property__details--images">
           <img
@@ -17,12 +17,17 @@ const PropertyDetails = () => {
             alt="placeholder"
             className="property__details--img-2"
           />
-          <img
-            src="/placeholder.svg"
-            alt="placeholder"
-            className="property__details--img-3"
-          />
+          <div className="property__details--img-last">
+            <img
+              src="/placeholder.svg"
+              alt="placeholder"
+              className="property__details--img-3"
+            />
+            <button className="btn btn--secondary"><img src="/placeholder.svg" alt=""/>Show All Photos</button>
+          </div>
+          <div className="property__details--img-btn">   <button className="btn btn--secondary"><img src="/placeholder.svg" alt=""/>Show All Photos</button></div>
         </div>
+     
         <div className="property__details--content">
           <div className="property__details--content__wrapper">
             <div className="property__details--info">
@@ -200,7 +205,11 @@ const PropertyDetails = () => {
               </div>
             </div>
           </div>
-          <div className="property__details--map">  <h4>Map View</h4><PropertyMap/></div>
+          <div className="property__details--map">
+            {" "}
+            <h4>Map View</h4>
+            <PropertyMap />
+          </div>
         </div>
         <div className="property__details--others">
           <h2>Similiar Listings</h2>

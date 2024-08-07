@@ -6,7 +6,7 @@ const Newsletter = () => {
     <div className="container">
       <div className="newsletter__wrapper">
         <div className="newsletter__content">
-          <h2>Subscribe to Our Newsletter</h2>
+          <h2>Subscribe to <br/>Our Newsletter</h2>
           <span>
             Joinn our newsletter to stay up to date on features and release
           </span>

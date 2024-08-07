@@ -1,9 +1,5 @@
 .footer {
   background-color: white;
-  padding: toRem(80);
-  @media only screen and (max-width: 1440px) {
-    padding: 0
-  }
 
   @media only screen and (min-width: 1600px) {
     max-width:  toRem(1440);
@@ -25,9 +21,14 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: toRem(20) toRem(80);
+    padding: toRem(20) toRem(160);
+
+    @media only screen and (min-width: 1600px) {
+      max-width:  toRem(1440);
+      padding: toRem(20) toRem(80);
+    }
     
-    @media only screen and (max-width: 1440px) {
+    @media only screen and (max-width: 1280px) {
       padding: toRem(20) toRem(40);
     }
   
@@ -137,7 +138,7 @@
     text-align: center;
     padding-top: 30px;
     border-top: 1px solid #e7e7e7;
-    margin-top: toRem(40) ;
+    margin: toRem(40) toRem(0) ;
     color: $color-secondary-dark-tertiary;
 
 
