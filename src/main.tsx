@@ -9,6 +9,7 @@ import About from "./pages/About.tsx";
 import Contact from "./pages/Contact.tsx";
 import Pricing from "./pages/Pricing.tsx";
 import Agent from "./pages/Agent.tsx";
+import SearchProperty from "./pages/SearchProperty.tsx";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
     path: "/agent",
     element: <Agent />,
   },
+  {
+    path: '/search',
+    element: <SearchProperty />
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

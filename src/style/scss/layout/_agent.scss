@@ -3,7 +3,7 @@
         display: flex;
         flex-direction: column;
         gap: toRem(40);
-        margin: toRem(40) toRem(0);
+        margin: toRem(60) toRem(0);
     }
 
     &__header {
@@ -12,7 +12,8 @@
             font-size: $heading-3-size;
             font-weight: $font-weight-bold;
             @media (max-width: 600px) {
-                font-size: $heading-6-size;
+                font-size: $heading-5-size;
+                text-align: center;
             }
         }
     }
@@ -21,6 +22,16 @@
         grid-template-columns: repeat(4, 1fr);
         gap: toRem(32);
         width: 100%;
+
+        @media (max-width: 1024px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @media (max-width: 775px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 600px) {
+            grid-template-columns: 1fr;
+        }
 
 
         .card__agents {
@@ -34,6 +45,10 @@
                     font-size: $heading-6-size;
                     font-family: 'Syne', sans-serif;
                     line-height: $heading-6-line-height;
+
+                    @media (max-width: 1340px) {
+                        font-size: $body-xlarge-size;
+                    }
                 }
                 p{
                     font-size: $body-large-size;

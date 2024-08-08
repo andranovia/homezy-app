@@ -1,0 +1,306 @@
+.search {
+  &__wrapper {
+    margin: toRem(60) toRem(0);
+    display: flex;
+    flex-direction: column;
+    gap: toRem(40);
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(40);
+    width: 100%;
+
+    h2 {
+      font-family: "Syne", sans-serif;
+      font-size: $heading-3-size;
+      font-weight: $font-weight-bold;
+
+      @media (max-width: 600px) {
+        font-size: $heading-6-size;
+      }
+    }
+
+    &__filter {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      width: 100%;
+      align-items: center;
+      gap: toRem(20);
+
+      .filter {
+        &__search {
+          grid-column: span 7;
+          width: auto;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border: 1.5px solid $color-secondary-dark-primary;
+          border-radius: 15px;
+          padding: toRem(20);
+
+          &--item {
+            font-family: "Hanken Grotesk", sans-serif;
+
+            display: flex;
+            align-items: center;
+            gap: toRem(10);
+
+            h6 {
+              color: $color-secondary-dark-tertiary;
+              font-size: $body-small-size;
+              font-weight: $font-weight-thin;
+
+              @media (max-width: 1200px) {
+                font-size: $body-xsmall-size;
+              }
+            }
+
+            p {
+              font-size: $body-large-size;
+              font-weight: $font-weight-bold;
+              line-height: $body-normal-line-height-regular;
+
+              @media (max-width: 900px) {
+                font-size: $body-small-size;
+              }
+            }
+
+            &__img {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              border-radius: 15px;
+              background-color: $color-brand-lavender-quaternary;
+              padding: toRem(10);
+
+              img {
+                width: auto;
+                height: toRem(20);
+              }
+            }
+          }
+
+          &--btn {
+            @media (max-width: 840px) {
+              width: 100%;
+            }
+
+            button {
+              font-weight: $font-weight-thin;
+              padding: toRem(15) toRem(30);
+
+              @media (max-width: 840px) {
+                padding: toRem(15) toRem(0);
+                width: 100%;
+              }
+            }
+          }
+        }
+
+        &__button {
+          grid-column: span 1;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+          border-radius: toRem(20);
+          background-color: $color-brand-lavender-quaternary;
+          border: 1.5px solid $color-secondary-dark-primary;
+          gap: toRem(10);
+
+          img {
+            width: auto;
+            height: toRem(30);
+          }
+
+          p {
+            font-weight: $font-weight-semi-bold;
+            font-family: "Hensen Grotesk", sans-serif;
+            font-size: $body-small-size;
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: toRem(20);
+
+    &__left {
+      .search {
+        &__map {
+          height: toRem(886);
+
+          .property--map {
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    &__right {
+        
+      .search {
+        &__result {
+            height: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: toRem(20);
+
+          &__header {
+            display: flex;
+            justify-content: space-between;
+            gap: toRem(20);
+
+            h4 {
+              font-family: "Syne", sans-serif;
+              font-weight: $font-weight-semi-bold;
+              font-size: $heading-5-size;
+              line-height: $heading-5-line-height;
+            }
+
+            &--filter {
+              display: flex;
+              align-items: center;
+              gap: toRem(10);
+
+              .filter__button {
+                display: flex;
+                align-items: center;
+                border-radius: toRem(10);
+                background-color: transparent;
+
+                padding: toRem(8);
+
+                img {
+                  width: auto;
+                  height: toRem(20);
+                }
+
+                border: none;
+
+                &--active {
+                  background-color: $color-brand-lavender-quinary;
+                  border: 1.5px solid $color-secondary-dark-primary;
+                }
+              }
+            }
+          }
+
+          &__content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .search {
+              &__card {
+                display: flex;
+                align-items: start;
+                overflow: hidden;
+                border-radius: 15px;
+                border: 1px solid $color-brand-lavender-quaternary;
+                height: toRem(234);
+
+                &__img {
+                  object-fit: cover;
+                  overflow: hidden;
+                  width: 80%;
+                  height: 100%;
+
+                  & {
+                    z-index: 8;
+                  }
+                }
+
+                &__info {
+                  padding: toRem(14);
+                  display: flex;
+                  align-items: start;
+                  flex-direction: column;
+                  gap: toRem(10);
+                  justify-content: space-between;
+                  width: 100%;
+
+                  .card__info {
+                    width: 100%;
+
+                    &__header {
+                      display: flex;
+                      justify-content: space-between;
+                      width: 100%;
+
+                      h4 {
+                        font-family: "Syne", sans-serif;
+                        font-size: $heading-5-size;
+                        font-weight: $font-weight-semi-bold;
+                        line-height: $heading-5-line-height;
+                        text-align: left;
+                      }
+                    }
+
+                    &__content {
+                      display: flex;
+                      flex-direction: column;
+                      width: 100%;
+                      gap: toRem(30);
+                      hr {
+                        border: 1px solid $color-brand-lavender-quinary;
+                      }
+                    }
+
+                    &--title {
+                      font-family: "Syne", sans-serif;
+                      display: flex;
+                      font-weight: $font-weight-semi-bold;
+                      font-size: $body-xsmall-size;
+                      flex-direction: column;
+                      gap: toRem(10);
+
+                      span {
+                        font-size: $body-normal-size;
+                        color: $color-secondary-dark-tertiary;
+                        font-weight: $font-weight-thin;
+                        font-family: "Hanken Grotesk", sans-serif;
+
+                        @media (max-width: 600px) {
+                          font-size: $body-normal-size;
+                        }
+                      }
+                    }
+                    &--features {
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      width: 95%;
+
+                      span {
+                        display: flex;
+                        align-content: center;
+                        gap: toRem(10);
+                        img {
+                          width: toRem(20);
+                        }
+                        font-family: "Hanken Grotesk", sans-serif;
+                        font-size: $body-small-size;
+                        font-weight: $font-weight-medium;
+                        color: $color-secondary-dark-secondary;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
