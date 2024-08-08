@@ -1,4 +1,4 @@
-import React from "react";
+
 import SearchCardItem from "./SearchCardItem";
 import Pagination from "../Pagination";
 
