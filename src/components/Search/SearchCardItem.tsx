@@ -21,7 +21,7 @@ const SearchCardItem = () => {
                 <span>2699 Green Valey, Highland Lake, FL</span>
               </div>
               <hr />
-              <div className="card__item--features">
+              <div className="card__info--features">
                 <span>
                   <img src="/placeholder.svg" alt="" /> 3 beds
                 </span>

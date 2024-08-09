@@ -20,6 +20,7 @@
       @media (max-width: 600px) {
         font-size: $heading-6-size;
       }
+    
     }
 
     &__filter {
@@ -28,6 +29,9 @@
       width: 100%;
       align-items: center;
       gap: toRem(20);
+      position: relative;
+
+      
 
       .filter {
         &__search {
@@ -40,6 +44,14 @@
           border-radius: 15px;
           padding: toRem(20);
 
+          @media (max-width: 840px) {
+           grid-column: span 8;
+           }
+           @media (max-width: 768px) {
+            flex-direction: column;
+            gap: toRem(20);
+            align-items: start;
+            }
           &--item {
             font-family: "Hanken Grotesk", sans-serif;
 
@@ -62,7 +74,7 @@
               font-weight: $font-weight-bold;
               line-height: $body-normal-line-height-regular;
 
-              @media (max-width: 900px) {
+              @media (max-width: 992px) {
                 font-size: $body-small-size;
               }
             }
@@ -84,7 +96,7 @@
           }
 
           &--btn {
-            @media (max-width: 840px) {
+            @media (max-width: 768px) {
               width: 100%;
             }
 
@@ -92,7 +104,8 @@
               font-weight: $font-weight-thin;
               padding: toRem(15) toRem(30);
 
-              @media (max-width: 840px) {
+            
+              @media (max-width: 768px) {
                 padding: toRem(15) toRem(0);
                 width: 100%;
               }
@@ -113,6 +126,11 @@
           border: 1.5px solid $color-secondary-dark-primary;
           gap: toRem(10);
 
+          @media (max-width: 840px) {
+            grid-column: span 8;
+            flex-direction: row;
+            padding: toRem(4) toRem(0);
+            }
           img {
             width: auto;
             height: toRem(30);
@@ -122,6 +140,150 @@
             font-weight: $font-weight-semi-bold;
             font-family: "Hensen Grotesk", sans-serif;
             font-size: $body-small-size;
+
+            @media (max-width: 1024px) {
+              font-size: $body-xsmall-size;
+            }
+          }
+        }
+        &__modal {
+          width: toRem(340);
+          position: absolute;
+          right: 0;
+          top: toRem(120);
+          z-index: 40;
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+          border-radius: toRem(10);
+          gap: toRem(24);
+    
+          box-shadow: 0 0 toRem(10) rgba(0, 0, 0, 0.2);
+
+          @media (max-width: 840px) {
+            top: toRem(180);
+            }
+
+            @media (max-width: 768px) {
+          top: toRem(360);
+          width: 100%;
+              }
+          
+          &--header {
+            display: flex;
+            padding: toRem(24);
+            padding-bottom: 0;
+            flex-direction: column;
+            gap: toRem(24);
+            h4 {
+              font-family: 'Syne', sans-serif;
+              font-size: $body-xlarge-size;
+              font-weight: $font-weight-semi-bold;
+            }
+
+            &__switch {
+              background-color: $color-brand-lavender-quinary;
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              gap: toRem(10);
+              padding: toRem(4);
+              border-radius: toRem(12);
+
+              &__btn {
+                border-radius: toRem(12);
+                padding: toRem(14) toRem(0);
+                display: flex;
+                align-items: center;
+                border: none;
+                justify-content: center;
+                background-color: transparent;
+                font-weight: $font-weight-semi-bold;
+                font-family: 'Hensen Grotesk', sans-serif;
+
+                &--active {
+                  background-color: $color-secondary-dark-primary;
+                  color: white;
+                }
+              }
+            }
+          }
+          &--content {
+         
+            padding: toRem(24) toRem(24);
+            padding-top: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: end;
+            row-gap: toRem(24);
+            column-gap: toRem(16);
+
+            
+            h4 {
+              font-family: 'Hensen Grotesk', sans-serif;
+              font-weight: $font-weight-semi-bold;
+            }
+
+            select {
+              font-family: 'Hensen Grotesk', sans-serif;
+             color: $color-secondary-dark-quarternary;
+              font-size: $body-small-size;
+              padding: toRem(10) toRem(10);
+              border: 1px solid $color-secondary-dark-quarternary;
+              border-radius: toRem(10);
+              
+            }
+
+            &__category {
+              grid-column: span 2;
+              display: flex;
+              flex-direction: column;
+              gap: toRem(10)
+
+            }
+            &__bedrooms {
+              grid-column: span 1;
+              display: flex;
+              flex-direction: column;
+              gap: toRem(10)
+
+            }
+            &__bathrooms {
+              grid-column: span 1;
+              display: flex;
+              flex-direction: column;
+              gap: toRem(10)
+
+            }
+            &__floorArea {
+              grid-column: span 2;
+              display: flex;
+              flex-direction: column;
+              gap: toRem(10)
+
+            }
+            &__minYear {
+              grid-column: span 1;
+              display: flex;
+              flex-direction: column;
+              gap: toRem(10)
+
+            }
+            &__maxYear {
+              grid-column: span 1;
+              display: flex;
+              flex-direction: column;
+              gap: toRem(10)
+
+            }
+
+            &__btn {
+              font-weight: $font-weight-semi-bold;
+              font-size: $body-small-size;
+
+              &--secondary {
+                background-color: $color-brand-lavender-quinary;
+              }
+            }
           }
         }
       }
@@ -134,11 +296,17 @@
     width: 100%;
     gap: toRem(20);
 
+    @media (max-width:  1024px) {
+      grid-template-columns: 1fr;
+    }
+
     &__left {
       .search {
         &__map {
           height: toRem(886);
-
+          @media (max-width:  1024px) {
+            height: toRem(300);
+          }
           .property--map {
             height: 100%;
           }
@@ -155,6 +323,8 @@
           flex-direction: column;
           gap: toRem(20);
 
+      
+
           &__header {
             display: flex;
             justify-content: space-between;
@@ -165,6 +335,9 @@
               font-weight: $font-weight-semi-bold;
               font-size: $heading-5-size;
               line-height: $heading-5-line-height;
+              @media (max-width: 426px) {
+                font-size: $body-xlarge-size;
+              }
             }
 
             &--filter {
@@ -200,6 +373,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            gap: toRem(20);
             .search {
               &__card {
                 display: flex;
@@ -209,12 +383,22 @@
                 border: 1px solid $color-brand-lavender-quaternary;
                 height: toRem(234);
 
+                @media (max-width:  600px) {
+                  flex-direction: column;
+                  height: auto;
+                }
+
                 &__img {
                   object-fit: cover;
                   overflow: hidden;
                   width: 80%;
                   height: 100%;
 
+                  @media (max-width:  600px) {
+                    max-width: none;
+                    height: toRem(160);
+                    width: 100%;
+                  }
                   & {
                     z-index: 8;
                   }
@@ -229,8 +413,21 @@
                   justify-content: space-between;
                   width: 100%;
 
+                  @media (max-width:  600px) {
+                    padding: toRem(20) toRem(14);
+                    width: auto;
+                  }
+
+                  @media (max-width:  426px) {
+                    padding: toRem(20) toRem(10);
+                  }
+
                   .card__info {
                     width: 100%;
+
+                    @media (max-width:  600px) {
+                    width: auto;
+                    }
 
                     &__header {
                       display: flex;
@@ -251,18 +448,34 @@
                       flex-direction: column;
                       width: 100%;
                       gap: toRem(30);
+
+                      @media (max-width:  600px) {
+                        gap: toRem(20);
+                      }
                       hr {
                         border: 1px solid $color-brand-lavender-quinary;
                       }
                     }
 
                     &--title {
-                      font-family: "Syne", sans-serif;
+                    
                       display: flex;
-                      font-weight: $font-weight-semi-bold;
-                      font-size: $body-xsmall-size;
+                 
                       flex-direction: column;
                       gap: toRem(10);
+
+                     h1 {
+                      font-family: "Syne", sans-serif;
+                      font-weight: $font-weight-semi-bold;
+                      font-size: $body-xlarge-size;
+
+                      @media (max-width:  600px) {
+                        font-size: $heading-5-size;
+                      }
+                      @media (max-width:  426px) {
+                        font-size: $heading-6-size;
+                      }
+                     }
 
                       span {
                         font-size: $body-normal-size;
@@ -270,17 +483,35 @@
                         font-weight: $font-weight-thin;
                         font-family: "Hanken Grotesk", sans-serif;
 
-                        @media (max-width: 600px) {
-                          font-size: $body-normal-size;
+                        @media (max-width:  1400px) {
+                          font-size: $body-small-size;
+                        }
+                        @media (max-width:  600px) {
+                          font-size: $body-xlarge-size;
+                        }
+                        @media (max-width:  426px) {
+                          font-size: $body-small-size;
                         }
                       }
                     }
                     &--features {
                       display: flex;
                       align-items: center;
-                      justify-content: space-between;
+                      justify-content: space-around;
                       width: 95%;
 
+                      @media (max-width:  426px) {
+                        width: 105%;
+                      }
+
+                      @media (max-width:  426px) {
+                        justify-content: center;
+                        gap: toRem(40);
+                      }
+
+                      @media (max-width:  375px) {
+                        gap: toRem(16);
+                      }
                       span {
                         display: flex;
                         align-content: center;
