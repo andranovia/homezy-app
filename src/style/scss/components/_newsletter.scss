@@ -2,7 +2,10 @@
     &__wrapper {
       display: flex;
       justify-content: center;
+      position: relative;
+      height: toRem(407);
       width: 100%;
+      overflow: hidden;
       flex-direction: column;
       gap: toRem(80);
       background-color: $color-brand-lavender-secondary;
@@ -74,9 +77,19 @@
         }
       }
     }
+    &__illustration {
+      position: absolute;
+      z-index: 0;
+      transform: rotate3d(0, 1, 0, 180deg);
+      top: toRem(-250);
+      right: toRem(-900);
+    }
   
     &__content {
       color: white;
+      z-index: 10;
+      position: relative;
+      overflow: hidden;
       padding: toRem(50) toRem(80) toRem(50);
       width: 40%;
   

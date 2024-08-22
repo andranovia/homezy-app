@@ -8,7 +8,7 @@ const BaseLayout = ({ children, newsletter }: { children: React.ReactNode, newsl
     <div className="max--width">
       <Navigation />
 
-      <div className="home__section container ">{children} {newsletter ? <Newsletter /> : null}</div>
+      <div className="home__section ">{children} {newsletter ? <Newsletter /> : null}</div>
       <Footer />
     </div>
   );

@@ -26,6 +26,9 @@ const Newsletter = () => {
             </div>
           ) : null}
         </div>
+        <div className="newsletter__illustration">
+          <img src="https://assets-global.website-files.com/64e2f6e9e8285220bd834d6e/64e2f6e9e8285220bd834d69_Town%20Buildings.svg" alt="" />
+        </div>
       </div>
     </div>
   );

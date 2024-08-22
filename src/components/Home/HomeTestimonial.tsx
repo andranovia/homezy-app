@@ -43,7 +43,7 @@ our business."
         <div className="testimonial__header">
           <h2>Kind Words From Our Customers</h2>
         </div>
-        <div className="card__wrapper--grid card__wrapper--grid__col--2">
+        <div className="card__wrapper--grid card__wrapper--grid__col--3 testimonial__contents">
           {isMobile ? (
             <>{items[currentIndex]}</>
           ) : (
@@ -66,15 +66,24 @@ our business."
       It's the perfect solution for our business. It has really helped
       our business."
               />
+              <HomeTestimonialItem
+                userData={{
+                  name: "Brooklyn Simmons 2",
+                  profession: "CEO of Asana",
+                }}
+                review="Your company is truly upstanding and is behind its product 100%.
+      It's the perfect solution for our business. It has really helped
+      our business."
+              />
             </>
           )}
         </div>
-        <div className="btn__navigation">
+        <div className="btn__navigation testimonial__navigation">
           <button onClick={handlePrev}>
-            <img src="/placeholder.svg" alt="back" />
+            <img src="/left-arrow.svg" alt="back" />
           </button>
           <button onClick={handleNext}>
-            <img src="/placeholder.svg" alt="next" />
+            <img src="/right-arrow.svg" alt="right" />
           </button>
         </div>
       </div>

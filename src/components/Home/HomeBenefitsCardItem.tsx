@@ -1,9 +1,9 @@
 
 
-const HomeBenefitsCardItem = ({title, description}: {title: string, description: string}) => {
+const HomeBenefitsCardItem = ({title, description, iconSrc}: {title: string, description: string, iconSrc: string}) => {
   return (
     <div className="card__icon__item">
-      <div className="card__icon__item--img"> <img src="/placeholder.svg" alt="" /></div>
+      <div className="card__icon__item--img"> <img src={iconSrc} alt="" /></div>
       <div className="card__icon__item--content">
         <div className="card__icon__item--main">
           <h4>{title}</h4>

@@ -42,10 +42,10 @@ const AboutAgents = () => {
           )}
           <div className="btn__navigation">
           <button onClick={handlePrev}>
-            <img src="/placeholder.svg" alt="back" />
+            <img src="/left-arrow.svg" alt="back" />
           </button>
           <button onClick={handleNext}>
-            <img src="/placeholder.svg" alt="next" />
+            <img src="/right-arrow.svg" alt="next" />
           </button>
         </div>
         </div>

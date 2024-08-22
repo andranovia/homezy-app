@@ -33,13 +33,13 @@
           display: flex;
           }
         button {
-            padding: toRem(14);
+            padding: toRem(8);
             display: flex;
             background-color: $color-secondary-dark-primary;
             color: white;
-            border-radius: toRem(18);
+            border-radius: toRem(14);
             img {
-                width: toRem(20);
+                width: toRem(30);
             }
         }
     }

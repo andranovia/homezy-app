@@ -5,8 +5,8 @@
       gap: toRem(20);
 
       img {
-        width: toRem(30);
-        padding: toRem(10);
+        width: toRem(40);
+
         background-color: $color-brand-lavender-quaternary;
         border-radius: 100%;
       }
@@ -24,9 +24,10 @@
 
     &__icon {
       img {
-        width: toRem(30);
-        background-color: white;
-        border-radius: 0%;
+        width: toRem(15);
+        background-color: $color-secondary-dark-primary;
+        padding: toRem(8);
+        border-radius: toRem(40);
       }
     }
   }

@@ -66,7 +66,7 @@ const Pagination: React.FC<PaginationProps> = ({
         onClick={() => handleButtonClick(currentPage - 1)}
         disabled={currentPage === 1}
       >
-        <img alt="arrow-right" src={"placeholder.svg"} />
+        <img alt="arrow-left" src={"/left-arrow.svg"} />
       </button>
       {getDisplayedPages()
         .slice(0, isMobile ? 5 : 7)
@@ -89,7 +89,7 @@ const Pagination: React.FC<PaginationProps> = ({
         onClick={() => handleButtonClick(currentPage + 1)}
         disabled={currentPage === totalPages}
       >
-        <img alt="arrow-right" src={"placeholder.svg"} />
+        <img alt="arrow-right" src={"/right-arrow.svg"} />
       </button>
     </div>
   );

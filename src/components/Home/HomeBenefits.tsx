@@ -6,10 +6,29 @@ const HomeBenefits = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const isMobile = useMediaQuery("only screen and (max-width : 768px)");
 
+  const itemsData = [
+    {
+      title: "Affordable Price",
+      description: "We provide the best for you. The price we offer accordance with the quality we provide",
+      iconSrc: '/coin.svg'
+    },
+    {
+      title: "Affordable Price",
+      description: "We provide the best for you. The price we offer accordance with the quality we provide",
+      iconSrc: '/thumb.svg'
+    },
+    {
+      title: "Affordable Price",
+      description: "We provide the best for you. The price we offer accordance with the quality we provide",
+      iconSrc: '/people.svg'
+    },
+  ]
+
+
   const items = [
-    <HomeBenefitsCardItem key="1" title="Affordable Price" description="We provide the best for you. The price we offer accordance with the quality we provide"/>,
-    <HomeBenefitsCardItem key="2" title="Affordable Price 2" description="We provide the best for you. The price we offer accordance with the quality we provide"/>,
-    <HomeBenefitsCardItem key="3" title="Affordable Price 3" description="We provide the best for you. The price we offer accordance with the quality we provide"/>,
+    <HomeBenefitsCardItem key="1" title="Affordable Price" description="We provide the best for you. The price we offer accordance with the quality we provide"       iconSrc='/coin.svg'/>,
+    <HomeBenefitsCardItem key="2" title="Affordable Price 2" description="We provide the best for you. The price we offer accordance with the quality we provide" iconSrc='/thumb.svg'/>,
+    <HomeBenefitsCardItem key="3" title="Affordable Price 3" description="We provide the best for you. The price we offer accordance with the quality we provide" iconSrc='/people.svg'/>,
   ];
 
   const handleNext = () => {
@@ -37,18 +56,15 @@ const HomeBenefits = () => {
             <>{items[currentIndex]}</>
           ) : (
             <>
-              <HomeBenefitsCardItem key="1" title="Affordable Price" description="We provide the best for you. The price we offer accordance with the quality we provide"/>
-              <HomeBenefitsCardItem key="2" title="Affordable Price" description="We provide the best for you. The price we offer accordance with the quality we provide"/>
-              <HomeBenefitsCardItem key="3" title="Affordable Price" description="We provide the best for you. The price we offer accordance with the quality we provide" />
-            </>
+              {itemsData.map((item) => <HomeBenefitsCardItem key={item.title} title={item.title} description={item.description} iconSrc={item.iconSrc} />)}</>
           )}
         </div>
         <div className="btn__navigation">
           <button onClick={handlePrev}>
-            <img src="/placeholder.svg" alt="back" />
+            <img src="/left-arrow.svg" alt="back" />
           </button>
           <button onClick={handleNext}>
-            <img src="/placeholder.svg" alt="next" />
+            <img src="/right-arrow.svg" alt="next" />
           </button>
         </div>
       </div>

@@ -1,6 +1,6 @@
 
 
-const HomeAgentsItem = ({name, profession}: {name:string, profession: string}) => {
+const HomeAgentsItem = ({name, profession, imgSrc}: {name:string, profession: string, imgSrc: string}) => {
   return (
     <div className="card__profile card__agents">
                         <div className="card__profile__text card__agents__text">
@@ -10,25 +10,25 @@ const HomeAgentsItem = ({name, profession}: {name:string, profession: string}) =
                             <div className="card__profile__text--social card__agents__social">
                                 <div className="card__profile__text--social__item card__agents__social--item">
                                     {" "}
-                                    <img src="/placeholder.svg" alt="" />
+                                    <img src="/call.svg" alt="" />
                                 </div>
                                 <div className="card__profile__text--social__item  card__agents__social--item">
                                     {" "}
-                                    <img src="/placeholder.svg" alt="" />
+                                    <img src="/instagram.svg" alt="" />
                                 </div>
                                 <div className="card__profile__text--social__item  card__agents__social--item">
                                     {" "}
-                                    <img src="/placeholder.svg" alt="" />
+                                    <img src="/facebook.svg" alt="" />
                                 </div>
                                 <div className="card__profile__text--social__item  card__agents__social--item">
                                     {" "}
-                                    <img src="/placeholder.svg" alt="" />
+                                    <img src="/twitter.svg" alt="" />
                                 </div>
                             </div>
                         </div>
                         <div className="card__profile--img card__agents__photo">
                             {" "}
-                            <img src="/placeholder.svg" alt="" />
+                            <img src={imgSrc} alt="" />
                         </div>
                     </div>
   )
