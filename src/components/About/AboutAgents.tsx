@@ -7,10 +7,10 @@ const AboutAgents = () => {
   const isMobile = useMediaQuery("only screen and (max-width : 768px)");
 
   const items = [
-    <AboutAgentsCard />,
-    <AboutAgentsCard />,
-    <AboutAgentsCard />,
-    <AboutAgentsCard />,
+    <AboutAgentsCard imgSrc="https://assets-global.website-files.com/64e2f6e9e8285220bd834d6e/64e2f6e9e8285220bd834dbf_Estately%20Team%20-%20David%20Brown.webp" title="David Brown" position="CEO Founder"/>,
+    <AboutAgentsCard  imgSrc="https://assets-global.website-files.com/64e2f6e9e8285220bd834d6e/64e2f6e9e8285220bd834dc0_Estately%20Team%20-%20Tom%20Johnson.webp" title="David Brown" position="CEO Founder"/>,
+    <AboutAgentsCard  imgSrc="https://assets-global.website-files.com/64e2f6e9e8285220bd834d6e/64e2f6e9e8285220bd834dc1_Estately%20Team%20-%20Sarah%20Lee.webp" title="David Brown" position="CEO Founder"/>,
+    <AboutAgentsCard  imgSrc="https://assets-global.website-files.com/64e2f6e9e8285220bd834d6e/64e2f6e9e8285220bd834dc2_Estately%20Team%20-%20John%20Smith.webp" title="David Brown" position="CEO Founder"/>,
   ];
 
   const handleNext = () => {
@@ -34,10 +34,10 @@ const AboutAgents = () => {
             <>{items[currentIndex]}</>
           ) : (
             <>
-              <AboutAgentsCard />
-              <AboutAgentsCard />
-              <AboutAgentsCard />
-              <AboutAgentsCard />
+              <AboutAgentsCard  imgSrc="https://assets-global.website-files.com/64e2f6e9e8285220bd834d6e/64e2f6e9e8285220bd834dbf_Estately%20Team%20-%20David%20Brown.webp" title="David Brown" position="CEO Founder" />
+              <AboutAgentsCard  imgSrc="https://assets-global.website-files.com/64e2f6e9e8285220bd834d6e/64e2f6e9e8285220bd834dc0_Estately%20Team%20-%20Tom%20Johnson.webp" title="David Brown" position="CEO Founder"/>
+              <AboutAgentsCard  imgSrc="https://assets-global.website-files.com/64e2f6e9e8285220bd834d6e/64e2f6e9e8285220bd834dc1_Estately%20Team%20-%20Sarah%20Lee.webp" title="David Brown" position="CEO Founder"/>
+              <AboutAgentsCard  imgSrc="https://assets-global.website-files.com/64e2f6e9e8285220bd834d6e/64e2f6e9e8285220bd834dc2_Estately%20Team%20-%20John%20Smith.webp" title="David Brown" position="CEO Founder"/>
             </>
           )}
           <div className="btn__navigation">

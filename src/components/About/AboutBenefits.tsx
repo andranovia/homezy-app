@@ -1,16 +1,16 @@
 import { useState } from "react";
-import HomeBenefitsCardItem from "../Home/HomeBenefitsCardItem";
 import { useMediaQuery } from "@uidotdev/usehooks";
+import AboutBenefitsCardItem from "./AboutBenefitsCardItem";
 
 const AboutBenefits = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const isMobile = useMediaQuery("only screen and (max-width : 768px)");
 
   const items = [
-    <HomeBenefitsCardItem key="1" title="Affordable Price" description="We provide the best for you. The price we offer accordance with the quality we provide"/>,
-    <HomeBenefitsCardItem key="2" title="Affordable Price 2" description="We provide the best for you. The price we offer accordance with the quality we provide"/>,
-    <HomeBenefitsCardItem key="3" title="Affordable Price 3" description="We provide the best for you. The price we offer accordance with the quality we provide"/>,
-    <HomeBenefitsCardItem key="4" title="Affordable Price 4" description="We provide the best for you. The price we offer accordance with the quality we provide" />
+    <AboutBenefitsCardItem iconSrc="/coin.svg" key="1" title="Affordable Price" description="We provide the best for you. The price we offer accordance with the quality we provide" />,
+    <AboutBenefitsCardItem iconSrc="/thunder.svg" key="2" title="Affordable Price 2" description="We provide the best for you. The price we offer accordance with the quality we provide" />,
+    <AboutBenefitsCardItem iconSrc="/thumb.svg" key="3" title="Affordable Price 3" description="We provide the best for you. The price we offer accordance with the quality we provide" />,
+    <AboutBenefitsCardItem iconSrc="/people.svg" key="4" title="Affordable Price 4" description="We provide the best for you. The price we offer accordance with the quality we provide" />
   ];
 
   const handleNext = () => {
@@ -29,7 +29,7 @@ const AboutBenefits = () => {
         <div className="about__benefits--header">
           <h2>Comfort is Our Top Priority For You</h2>
           <span>
-          We guarantee that the products we sell will make our customers happy because we are very concerned about our consumer satisfaction
+            We guarantee that the products we sell will make our customers happy because we are very concerned about our consumer satisfaction
           </span>
         </div>
         <div className="card__wrapper--grid card__wrapper--grid__col--4 about__benefits--cards">
@@ -37,10 +37,10 @@ const AboutBenefits = () => {
             <>{items[currentIndex]}</>
           ) : (
             <>
-              <HomeBenefitsCardItem key="1" title="Affordable Price" description="We provide the best for you. The price we offer accordance with the quality we provide"/>
-              <HomeBenefitsCardItem key="2" title="Affordable Price" description="We provide the best for you. The price we offer accordance with the quality we provide"/>
-              <HomeBenefitsCardItem key="3" title="Affordable Price" description="We provide the best for you. The price we offer accordance with the quality we provide" />
-              <HomeBenefitsCardItem key="4" title="Affordable Price" description="We provide the best for you. The price we offer accordance with the quality we provide" />
+              <AboutBenefitsCardItem iconSrc="/coin.svg" key="1" title="Affordable Price" description="We provide the best for you. The price we offer accordance with the quality we provide" />
+              <AboutBenefitsCardItem iconSrc="/thunder.svg" key="2" title="Affordable Price 2" description="We provide the best for you. The price we offer accordance with the quality we provide" />
+              <AboutBenefitsCardItem iconSrc="/thumb.svg" key="3" title="Affordable Price 3" description="We provide the best for you. The price we offer accordance with the quality we provide" />
+              <AboutBenefitsCardItem iconSrc="/people.svg" key="4" title="Affordable Price 4" description="We provide the best for you. The price we offer accordance with the quality we provide" />
             </>
           )}
         </div>

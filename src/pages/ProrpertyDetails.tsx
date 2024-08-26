@@ -2,6 +2,26 @@ import HomeFeaturedCardItem from "../components/Home/HomeFeaturedCardItem";
 import PropertyMap from "../components/map/PropertyMap";
 import BaseLayout from "../Layouts/BaseLayout";
 
+
+
+const cardItemsData = [
+  {
+    imgSrc: "/home-img-1.jpg",
+    title: "Beach Pros Reality Inc.",
+    price: "$2500",
+  },
+  {
+    imgSrc: "/home-img-3.png",
+    title: "Beach Pros Reality Inc.",
+    price: "$2500",
+  },
+  {
+    imgSrc: "/home-img-2.jpg",
+    title: "Beach Pros Reality Inc.",
+    price: "$2500",
+  },
+]
+
 const PropertyDetails = () => {
   return (
     <BaseLayout newsletter={false}>
@@ -206,7 +226,6 @@ const PropertyDetails = () => {
             </div>
           </div>
           <div className="property__details--map">
-            {" "}
             <h4>Map View</h4>
             <PropertyMap />
           </div>
@@ -214,9 +233,11 @@ const PropertyDetails = () => {
         <div className="property__details--others">
           <h2>Similiar Listings</h2>
           <div className="card__wrapper--grid card__wrapper--grid__md-col--1">
-            <HomeFeaturedCardItem />
-            <HomeFeaturedCardItem />
-            <HomeFeaturedCardItem />
+            {cardItemsData.map((item, index) => (
+              <HomeFeaturedCardItem key={index} itemData={item} />
+            ))}
+ 
+      
           </div>
         </div>
       </div>

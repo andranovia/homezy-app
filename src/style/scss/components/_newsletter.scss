@@ -10,8 +10,10 @@
       gap: toRem(80);
       background-color: $color-brand-lavender-secondary;
       border: 3px solid $color-secondary-dark-primary;
-   
       border-radius: toRem(15);
+      @media (max-width: 768px) {
+        padding-bottom: toRem(200);
+    }
     }
   
     &__cta {
@@ -25,9 +27,9 @@
       margin-top: toRem(20);
       border-radius: 15px;
       padding: toRem(15) toRem(20);
-      @media (max-width: 1024px) {
+      @media (max-width: 992px) {
         width: auto;
-      }
+    }
       p {
         font-family: "Hanken Grotesk", sans-serif;
         font-size: $body-large-size;
@@ -70,7 +72,7 @@
       &--btn {
         button {
           padding: toRem(15);
-          @media (max-width: 1024px) {
+          @media (max-width: 992px) {
             padding: toRem(15) toRem(0);
             width: 100%;
           }
@@ -83,6 +85,17 @@
       transform: rotate3d(0, 1, 0, 180deg);
       top: toRem(-250);
       right: toRem(-900);
+      @media (max-width: 768px) {
+        top: auto;
+        right: auto;
+        left: 0;
+        bottom: 0;
+    }
+     img {
+      @media (max-width: 768px) {
+        width: toRem(1000);
+    }
+     }
     }
   
     &__content {
@@ -92,13 +105,15 @@
       overflow: hidden;
       padding: toRem(50) toRem(80) toRem(50);
       width: 40%;
+
+
   
-      @media (max-width: 1080px) {
+      @media (max-width: 1280px) {
         padding: toRem(50) toRem(40) toRem(50);
-        width: 40%;
+        width: 50%;
       }
   
-      @media (max-width: 785px) {
+      @media (max-width: 768px) {
         width: auto;
       }
   
@@ -112,7 +127,7 @@
         font-family: "Syne", sans-serif;
         font-size: $heading-2-size;
         font-weight: $font-weight-bold;
-        @media (max-width: 1024px) {
+        @media (max-width: 992px) {
           font-size: $heading-5-size;
         }
       }
@@ -120,7 +135,7 @@
         font-family: "Hanken Grotesk", sans-serif;
         font-weight: 300;
         width: 60%;
-        @media (max-width: 1024px) {
+        @media (max-width: 992px) {
           width: auto;
           font-size: $body-xlarge-size;
           line-height: $body-xlarge-line-height-regular;

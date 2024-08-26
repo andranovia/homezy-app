@@ -8,7 +8,7 @@ const ContactForm = () => {
           <div className="form__input">
             <img
               className="form__input--icon"
-              src="/placeholder.svg"
+              src="/profile-primary.svg"
               alt="name"
             />
             <input type="text" placeholder="First Name" />
@@ -16,7 +16,7 @@ const ContactForm = () => {
           <div className="form__input">
             <img
               className="form__input--icon"
-              src="/placeholder.svg"
+              src="/profile-primary.svg"
               alt="name"
             />
             <input
@@ -29,7 +29,7 @@ const ContactForm = () => {
         <div className="form__input">
           <img
             className="form__input--icon"
-            src="/placeholder.svg"
+            src="/call-primary.svg"
             alt="call"
           />
           <input
@@ -41,7 +41,7 @@ const ContactForm = () => {
         <div className="form__input">
           <img
             className="form__input--icon"
-            src="/placeholder.svg"
+            src="/mail-primary.svg"
             alt="email"
           />
           <input

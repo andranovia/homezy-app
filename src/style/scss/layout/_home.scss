@@ -820,6 +820,10 @@
         background-color: $color-brand-lavender-quaternary;
         border-radius: toRem(15);
         width: toRem(40);
+
+        @media (max-width: 1280px) {
+          width: toRem(30);
+        }
       }
       display: flex;
       align-items: center;
@@ -830,11 +834,17 @@
           font-family: "Syne", sans-serif;
           font-size: $body-xlarge-size;
           font-weight: $font-weight-bold;
+          @media (max-width: 1280px) {
+            font-size: $body-large-size;
+          }
         }
         span {
           font-family: "Hanken Grotesk", sans-serif;
           font-size: $body-normal-size;
           color: $color-secondary-dark-tertiary;
+          @media (max-width: 1280px) {
+            font-size: $body-xsmall-size;
+          }
         }
       }
     }

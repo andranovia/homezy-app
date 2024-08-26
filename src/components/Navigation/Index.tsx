@@ -43,7 +43,7 @@ const Navigation = () => {
           </Link>
         </div>
         <div className="navbar__dropdown">
-          <img src="/placeholder.svg" alt="" />
+          <img src="/hamburger.svg" alt="" />
         </div>
       </div>
     </div>

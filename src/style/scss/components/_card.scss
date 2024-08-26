@@ -519,6 +519,9 @@
           color: $color-secondary-dark-tertiary;
           font-weight: $font-weight-thin;
           width: toRem(416);
+          @media (max-width: 1280px) {
+            width: auto;
+          }
         }
       }
 
@@ -529,6 +532,9 @@
         justify-content: space-between;
         img {
           width: toRem(60);
+          @media (max-width: 375px) {
+            width: toRem(40);
+          }
         }
 
         .user--info {
@@ -543,11 +549,17 @@
             @media (max-width: 426px) {
               font-size: $body-normal-size;
             }
+            @media (max-width: 375px) {
+              font-size: $body-small-size;
+            }
           }
           span {
             font-family: "Hanken Grotesk", sans-serif;
             font-size: $body-normal-size;
             color: $color-secondary-dark-tertiary;
+            @media (max-width: 375px) {
+              font-size: $body-xsmall-size;
+            }
           }
         }
       }

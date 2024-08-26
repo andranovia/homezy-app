@@ -59,7 +59,7 @@
     align-items: end;
     gap: toRem(24);
 
-    @media screen and (max-width: 1090px) {
+    @media screen and (max-width: 992px) {
       flex-direction: column;
       align-items: center;
       width: 100%;
@@ -80,11 +80,11 @@
     display: flex;
     flex-direction: column;
     padding: toRem(24);
-    gap: toRem(30);
+    gap: toRem(26);
     border: 1px solid $color-brand-lavender-tertiary;
     border-radius: toRem(15);
     
-    @media screen and (max-width: 1090px) {
+    @media screen and (max-width: 1280px) {
       height: auto;
       width: auto;
       gap: toRem(16);
@@ -111,7 +111,17 @@
                 width: toRem(50);
                 height: toRem(50);
                 border-radius: toRem(100);
+                display: flex;
+                justify-content: center;
                 background-color: black;
+                align-items: center;
+                &--rounded {
+                  background-color: white;
+                  border-radius: toRem(100);
+                  width: toRem(18);
+                  height: toRem(18);
+
+                }
             }
             &__title {
                 display: flex;
@@ -138,7 +148,7 @@
       display: flex;
       gap: toRem(10);
      
-      @media screen and (max-width: 1090px) {
+      @media screen and (max-width: 992px) {
         margin-bottom: toRem(10);
       }
 
@@ -168,7 +178,7 @@
     box-shadow: rgba($color-brand-lavender-secondary, 0.4) 0px 8px 140px;
     border: 2px solid $color-secondary-dark-primary;
 
-    @media screen and (max-width: 1090px) {
+    @media screen and (max-width: 992px) {
       gap: toRem(16);
     }
 
@@ -183,7 +193,7 @@
         font-family: "Hanken Grotesk", sans-serif;
         font-size: $body-small-size;
         text-transform: uppercase;
-        @media screen and (max-width: 1090px) {
+        @media screen and (max-width: 992px) {
           margin-bottom: toRem(10);
         }
     }

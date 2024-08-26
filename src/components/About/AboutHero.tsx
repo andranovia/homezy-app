@@ -32,13 +32,13 @@ const AboutHero = () => {
                 </div>
                 <div className="about__right">
                     <div className="about__card">
-                        <img src="/placeholder.svg" alt="" />
+                        <img src="https://assets-global.website-files.com/64e2f6e9e8285220bd834d6e/64e2f6e9e8285220bd834d89_Hero%20About%20Us%20V1%20Illustration%20Item%203.webp" alt="" />
                     </div>
                     <div className="about__card">
-                        <img src="/placeholder.svg" alt="" />
+                        <img src="https://assets-global.website-files.com/64e2f6e9e8285220bd834d6e/64e2f6e9e8285220bd834d88_Hero%20About%20Us%20V1%20Illustration%20Item%202.webp" alt="" />
                     </div>
                     <div className="about__card">
-                        <img src="/placeholder.svg" alt="" />
+                        <img src="https://assets-global.website-files.com/64e2f6e9e8285220bd834d6e/64e2f6e9e8285220bd834d87_Hero%20About%20Us%20V1%20Illustration%20Item%201.webp" alt="" />
                     </div>
                 </div>
             </div>

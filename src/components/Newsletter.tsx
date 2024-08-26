@@ -1,7 +1,7 @@
 import { useMediaQuery } from "@uidotdev/usehooks";
 
 const Newsletter = () => {
-  const isMobile = useMediaQuery("only screen and (max-width : 1024px)");
+  const isMobile = useMediaQuery("only screen and (max-width : 992px)");
   return (
     <div className="container">
       <div className="newsletter__wrapper">

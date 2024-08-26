@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media only screen and (min-width: 1600px) {
+  @media only screen and (min-width: 1768px) {
     max-width:  toRem(1440);
 
   }
@@ -14,7 +14,7 @@
   font-family: Arial, sans-serif;
   color: #333;
   
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     padding: 0px;
     margin-top: toRem(40);
   }
@@ -58,17 +58,12 @@
   }
 
   &__section {
-
-
-   
-   
-
     &--wrapper {
       display: flex;
       align-items: start;
       gap: toRem(80);
 
-      @media (max-width: 600px) {
+      @media (max-width: 768px) {
         display: grid;
         grid-template-columns: 1fr auto;
         justify-content: space-between;
@@ -79,7 +74,7 @@
     }
     &--branding {
       width: 30%;
-
+      margin-bottom: toRem(40);
       @media (max-width: 1024px) {
         width: 50%;
       }
@@ -88,16 +83,10 @@
       }
 
       .footer__logo {
-        display: flex;
-        align-items: center;
-        margin-bottom: toRem(30);
-        gap: toRem(10);
+        margin-bottom: toRem(10);
         img {
-          width: toRem(40);
+          width: toRem(160);
         }
-        font-weight: $font-weight-bold;
-        font-family: "Syne", sans-serif;
-        font-size: $heading-5-size;
       }
       .footer__text {
         font-family: "Hanken Grotesk", sans-serif;
@@ -157,11 +146,14 @@
     margin: toRem(40) toRem(0) ;
     color: $color-secondary-dark-tertiary;
 
-
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       margin: toRem(60) toRem(0);
       font-family: "Hanken Grotesk", sans-serif;
       font-size: $body-xlarge-size;
+    }
+    @media (max-width: 576px) {
+      margin-bottom: toRem(40);
+      font-size: $body-normal-size;
     }
   }
 }

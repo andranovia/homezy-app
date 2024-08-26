@@ -21,7 +21,9 @@ const Pricing = () => {
           <div className="pricing__content">
             <div className="pricing__card">
               <div className="pricing__card--header">
-                <div className="header__icon"></div>
+                <div className="header__icon">
+                         <div className="header__icon--rounded"></div>
+                </div>
                 <div className="header__title">
                   <h5>Basic Plan</h5>
                   <p>1 property credit</p>
@@ -34,27 +36,27 @@ const Pricing = () => {
               <hr />
               <div className="pricing__card--benefits">
                 <div className="benefits__item">
-                  <img src="/placeholder.svg" alt="check" />
+                  <img src="/check-primary.svg" alt="check" />
                   <p>1 list property credit</p>
                 </div>
                 <div className="benefits__item">
-                  <img src="/placeholder.svg" alt="check" />
+                  <img src="/check-primary.svg" alt="check" />
                   <p>1 list property credit</p>
                 </div>
                 <div className="benefits__item">
-                  <img src="/placeholder.svg" alt="check" />
+                  <img src="/check-primary.svg" alt="check" />
                   <p>1 list property credit</p>
                 </div>
                  <div className="benefits__item">
-                  <img src="/placeholder.svg" alt="check" />
+                  <img src="/check-primary.svg" alt="check" />
                   <p>1 list property credit</p>
                 </div>
                 <div className="benefits__item">
-                  <img src="/placeholder.svg" alt="check" />
+                  <img src="/check-primary.svg" alt="check" />
                   <p>1 list property credit</p>
                 </div>
                 <div className="benefits__item">
-                  <img src="/placeholder.svg" alt="check" />
+                  <img src="/check-primary.svg" alt="check" />
                   <p>1 list property credit</p>
                 </div>
               </div>
@@ -64,7 +66,9 @@ const Pricing = () => {
             <div className="popular">Most Popular</div>
               <div className="pricing__card--header">
                 
-                <div className="header__icon"></div>
+                <div className="header__icon">
+                         <div className="header__icon--rounded"></div>
+                </div>
                 <div className="header__title">
                   <h5>Basic Plan</h5>
                   <p>1 property credit</p>
@@ -77,35 +81,37 @@ const Pricing = () => {
               <hr />
               <div className="pricing__card--benefits">
                 <div className="benefits__item">
-                  <img src="/placeholder.svg" alt="check" />
+                  <img src="/check-primary.svg" alt="check" />
                   <p>1 list property credit</p>
                 </div>
                 <div className="benefits__item">
-                  <img src="/placeholder.svg" alt="check" />
+                  <img src="/check-primary.svg" alt="check" />
                   <p>1 list property credit</p>
                 </div>
                 <div className="benefits__item">
-                  <img src="/placeholder.svg" alt="check" />
+                  <img src="/check-primary.svg" alt="check" />
                   <p>1 list property credit</p>
                 </div>
                  <div className="benefits__item">
-                  <img src="/placeholder.svg" alt="check" />
+                  <img src="/check-primary.svg" alt="check" />
                   <p>1 list property credit</p>
                 </div>
                 <div className="benefits__item">
-                  <img src="/placeholder.svg" alt="check" />
+                  <img src="/check-primary.svg" alt="check" />
                   <p>1 list property credit</p>
                 </div>
                 <div className="benefits__item">
-                  <img src="/placeholder.svg" alt="check" />
+                  <img src="/check-primary.svg" alt="check" />
                   <p>1 list property credit</p>
                 </div>
               </div>
-              <button className="btn btn--secondary">Purchase Credit</button>
+              <button className="btn btn--primary">Purchase Credit</button>
             </div>
             <div className="pricing__card">
               <div className="pricing__card--header">
-                <div className="header__icon"></div>
+                <div className="header__icon">
+                         <div className="header__icon--rounded"></div>
+                </div>
                 <div className="header__title">
                   <h5>Basic Plan</h5>
                   <p>1 property credit</p>
@@ -118,27 +124,27 @@ const Pricing = () => {
               <hr />
               <div className="pricing__card--benefits">
                 <div className="benefits__item">
-                  <img src="/placeholder.svg" alt="check" />
+                  <img src="/check-primary.svg" alt="check" />
                   <p>1 list property credit</p>
                 </div>
                 <div className="benefits__item">
-                  <img src="/placeholder.svg" alt="check" />
+                  <img src="/check-primary.svg" alt="check" />
                   <p>1 list property credit</p>
                 </div>
                 <div className="benefits__item">
-                  <img src="/placeholder.svg" alt="check" />
+                  <img src="/check-primary.svg" alt="check" />
                   <p>1 list property credit</p>
                 </div>
                  <div className="benefits__item">
-                  <img src="/placeholder.svg" alt="check" />
+                  <img src="/check-primary.svg" alt="check" />
                   <p>1 list property credit</p>
                 </div>
                 <div className="benefits__item">
-                  <img src="/placeholder.svg" alt="check" />
+                  <img src="/check-primary.svg" alt="check" />
                   <p>1 list property credit</p>
                 </div>
                 <div className="benefits__item">
-                  <img src="/placeholder.svg" alt="check" />
+                  <img src="/check-primary.svg" alt="check" />
                   <p>1 list property credit</p>
                 </div>
               </div>

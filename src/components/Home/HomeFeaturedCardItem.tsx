@@ -1,6 +1,12 @@
 
-
-const HomeFeaturedCardItem = ({itemData}: {itemData: {title: string, imgSrc: string, price: string}}) => {
+type HomeFeaturedCardItemProps = {
+  itemData: {
+    title: string
+    price: string
+    imgSrc: string
+  }
+}
+const HomeFeaturedCardItem = ({ itemData }: HomeFeaturedCardItemProps) => {
   return (
     <div className="card__item">
       <div className="card__item--img">

@@ -1,11 +1,14 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__content ">
         <div className="footer__section footer__section--branding">
           <div className="footer__logo">
-            <img src="/placeholder.svg" alt="Homezy Logo" />
-            <span>Homezy</span>
+          <Link to={"/"} className="custom-link">
+            <img src="https://assets-global.website-files.com/64e2f6e9e8285220bd834d6e/64e2f6e9e8285220bd834dd5_homezy.svg" alt="Homezy Logo" />
+          </Link>
           </div>
           <p className="footer__text">
             We are creative people who provide the best way to you who want to
@@ -13,20 +16,16 @@ const Footer = () => {
           </p>
           <div className="footer__socials">
             <a href="#" className="footer__social">
-              {" "}
-              <img src="/placeholder.svg" alt="Homezy Logo" />
+              <img src="/call.svg" alt="Homezy Logo" />
             </a>
             <a href="#" className="footer__social">
-              {" "}
-              <img src="/placeholder.svg" alt="Homezy Logo" />
+              <img src="/facebook.svg" alt="Homezy Logo" />
             </a>
             <a href="#" className="footer__social">
-              {" "}
-              <img src="/placeholder.svg" alt="Homezy Logo" />
+              <img src="/instagram.svg" alt="Homezy Logo" />
             </a>
             <a href="#" className="footer__social">
-              {" "}
-              <img src="/placeholder.svg" alt="Homezy Logo" />
+              <img src="/twitter.svg" alt="Homezy Logo" />
             </a>
           </div>
         </div>
