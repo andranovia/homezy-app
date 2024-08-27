@@ -6,22 +6,40 @@
     flex-direction: column;
 
     &--wrapper {
-      margin: toRem(20) toRem(0);
       display: flex;
       flex-direction: column;
       gap: toRem(40);
     }
+    &--navigation {
+      display: flex;
+      align-items: center;
+      gap: toRem(16);
+
+      img {
+        width: toRem(24);
+        height: toRem(24);
+      }
+
+      h6 {
+        font-family: "Hansen Grotesk", sans-serif;
+        font-size: $body-large-size;
+        line-height: $body-large-line-height-regular;
+      }
+    }
+
     &--images {
       display: grid;
-      grid-template-columns: 2.5fr 1fr;
+      grid-template-columns: 2.2fr 1fr;
       grid-template-rows: 1fr 1fr;
 
       gap: toRem(40);
-
+      @media (max-width: 1280px) {
+        grid-template-columns: 1.8fr 1fr;
+      }
       @media (max-width: 992px) {
         gap: toRem(20);
       }
-      @media (max-width: 426px) {
+      @media (max-width: 576px) {
         gap: toRem(10);
       }
       img {
@@ -56,23 +74,15 @@
         justify-content: center;
         gap: toRem(10);
         position: absolute;
-        left: calc(40%);
+        right: toRem(10);
         bottom: toRem(20);
         width: toRem(140);
         padding: toRem(10);
         border: 1px solid $color-secondary-dark-tertiary;
         font-size: $body-xsmall-size;
 
-        @media (max-width: 1380px) {
-          left: calc(32%);
-        }
-
-        @media (max-width: 1042px) {
-          left: calc(26%);
-        }
-
         @media (max-width: 992px) {
-        display: none;
+          display: none;
         }
       }
     }
@@ -92,25 +102,26 @@
         width: 100%;
         border: 1px solid $color-secondary-dark-tertiary;
         font-size: $body-xsmall-size;
-
       }
-      
 
       @media (min-width: 992px) {
         display: none;
       }
 
-      @media (max-width: 476px) {
-     grid-column: span 2;
+      @media (max-width: 576px) {
+        grid-column: span 2;
       }
     }
 
     &--content {
       display: grid;
-      grid-template-columns: 2.5fr 1fr;
-  
+      grid-template-columns: 2.2fr 1fr;
+
       gap: toRem(40);
-      @media (max-width: 1024px) {
+      @media (max-width: 1280px) {
+        grid-template-columns: 1.8fr 1fr;
+      }
+      @media (max-width: 992px) {
         grid-template-columns: 1fr;
       }
     }
@@ -123,7 +134,7 @@
         justify-content: space-between;
         align-items: start;
 
-        @media (max-width: 476px) {
+        @media (max-width: 576px) {
           flex-direction: column;
           gap: toRem(20);
         }
@@ -131,7 +142,7 @@
         h2 {
           font-family: "Syne", sans-serif;
           font-size: $heading-5-size;
-          @media (max-width: 426px) {
+          @media (max-width: 576px) {
             font-size: toRem(25);
           }
         }
@@ -147,6 +158,13 @@
         button {
           padding: toRem(10) toRem(40);
         }
+      }
+      &__share {
+        display: flex;
+        align-items: center;
+        gap: toRem(8);
+        width: fit-content !important;
+        padding: toRem(16) toRem(32) !important;
       }
 
       &__description {
@@ -194,7 +212,9 @@
       display: flex;
       flex-direction: column;
       gap: toRem(25);
-
+      @media (max-width: 576px) {
+        padding: toRem(20);
+      }
       &__pricing {
         display: flex;
         flex-direction: column;
@@ -208,6 +228,10 @@
           font-family: "Hanken Grotesk", sans-serif;
           font-size: $heading-4-size;
           font-weight: $font-weight-bold;
+
+          @media (max-width: 1280px) {
+            font-size: $heading-5-size;
+          }
         }
       }
 
@@ -217,6 +241,9 @@
           font-size: $body-xlarge-size;
           font-weight: $font-weight-bold;
           color: $color-secondary-dark-primary;
+          @media (max-width: 1280px) {
+            font-size: $body-large-size;
+          }
         }
       }
       &__form {
@@ -234,6 +261,10 @@
           border-bottom: 1px solid $color-secondary-dark-tertiary;
 
           .tab {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: toRem(10);
             font-family: "Hanken Grotesk", sans-serif;
             font-weight: $font-weight-semi-bold;
             flex: 1;
@@ -243,9 +274,26 @@
             cursor: pointer;
             color: $color-secondary-dark-tertiary;
 
+            @media (max-width: 1280px) {
+              gap: toRem(6);
+            }
+            img {
+              opacity: 0.4;
+            }
+
+            span {
+              @media (max-width: 1280px) {
+                font-size: $body-xsmall-size;
+              }
+            }
+
+
             &.active {
               color: $color-secondary-dark-primary;
               border-bottom: 2px solid $color-secondary-dark-primary;
+              img {
+                opacity: 1;
+              }
             }
           }
         }
@@ -305,12 +353,11 @@
           align-items: center;
 
           .arrow {
-            transform: rotate(90deg);
             transition: transform 0.3s ease;
           }
 
           &.active .arrow {
-            transform: rotate(270deg);
+            transform: rotate(180deg);
           }
         }
 
@@ -340,7 +387,7 @@
             width: 100%;
             font-size: $body-normal-size;
             margin-bottom: 10px;
-            @media (max-width: 426px) {
+            @media (max-width: 576px) {
               font-size: $body-small-size;
               gap: toRem(10);
               grid-template-columns: auto;
@@ -384,7 +431,7 @@
         padding: toRem(25);
         border: 2px solid $color-brand-lavender-quaternary;
         border-radius: toRem(20);
-        @media (max-width: 426px) {
+        @media (max-width: 576px) {
           gap: toRem(30);
           flex-direction: column;
           align-items: start;
@@ -395,7 +442,7 @@
         display: flex;
         align-items: center;
         gap: toRem(20);
-        @media (max-width: 426px) {
+        @media (max-width: 576px) {
           flex-direction: column;
           width: 100%;
           align-items: center;
@@ -403,7 +450,11 @@
         button {
           padding: toRem(15) toRem(20);
           background-color: transparent;
-          @media (max-width: 426px) {
+          @media (max-width: 1280px) {
+            font-size: $body-small-size;
+            padding: toRem(15) toRem(15);
+          }
+          @media (max-width: 768px) {
             padding: toRem(15) toRem(0);
             width: 100%;
           }
@@ -415,8 +466,8 @@
       display: flex;
       flex-direction: column;
       gap: toRem(30);
-      @media (max-width: 426px) {
-    margin-bottom: toRem(60);
+      @media (max-width: 576px) {
+        margin-bottom: toRem(60);
       }
       h4 {
         font-family: "Syne", sans-serif;

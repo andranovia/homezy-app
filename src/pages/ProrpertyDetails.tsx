@@ -26,28 +26,32 @@ const PropertyDetails = () => {
   return (
     <BaseLayout newsletter={false}>
       <div className="property__details--wrapper container">
+        <div className="property__details--navigation">
+          <img src="/left-arrow-dark.svg" alt="" />
+          <h6>Back To Search</h6>
+        </div>
         <div className="property__details--images">
           <img
-            src="/placeholder.svg"
+            src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="placeholder"
             className="property__details--img-1"
           />
           <img
-            src="/placeholder.svg"
+            src="https://cdn.prod.website-files.com/64e2f6e9e8285220bd834d6e/64e2f6e9e8285220bd834dba_Estately%20Property%20-%20Photo%20Gallery%201.webp"
             alt="placeholder"
             className="property__details--img-2"
           />
           <div className="property__details--img-last">
             <img
-              src="/placeholder.svg"
+              src="https://cdn.prod.website-files.com/64e2f6e9e8285220bd834d6e/64e2f6e9e8285220bd834dbc_Estately%20Property%20-%20Photo%20Gallery%202.webp"
               alt="placeholder"
               className="property__details--img-3"
             />
-            <button className="btn btn--secondary"><img src="/placeholder.svg" alt=""/>Show All Photos</button>
+            <button className="btn btn--secondary"><img src="/placeholder.svg" alt="" />Show All Photos</button>
           </div>
-          <div className="property__details--img-btn">   <button className="btn btn--secondary"><img src="/placeholder.svg" alt=""/>Show All Photos</button></div>
+          <div className="property__details--img-btn">   <button className="btn btn--secondary"><img src="/placeholder.svg" alt="" />Show All Photos</button></div>
         </div>
-     
+
         <div className="property__details--content">
           <div className="property__details--content__wrapper">
             <div className="property__details--info">
@@ -57,31 +61,31 @@ const PropertyDetails = () => {
                   <p>3 Leame Close, Hull, HU3 6ND</p>
                 </span>
 
-                <button className="btn btn--secondary">Share</button>
+                <button className="btn btn--secondary property__details--info__share"><img src="/share.svg" alt="" /><span>Share</span></button>
               </div>
               <div className="card__facilities">
                 <div className="card__facilities--item">
                   <h4>bedrooms</h4>
                   <span>
-                    <img src="/placeholder.svg" alt="" /> 4
+                    <img src="/bedroom.svg" alt="" /> 4
                   </span>
                 </div>
                 <div className="card__facilities--item">
                   <h4>Bathrooms</h4>
                   <span>
-                    <img src="/placeholder.svg" alt="" /> 4
+                    <img src="/bathroom.svg" alt="" /> 4
                   </span>
                 </div>
                 <div className="card__facilities--item">
                   <h4>Square Area</h4>
                   <span>
-                    <img src="/placeholder.svg" alt="" /> 6x8m²
+                    <img src="/area.svg" alt="" /> 6x8m²
                   </span>
                 </div>
                 <div className="card__facilities--item">
                   <h4>Square Area</h4>
                   <span>
-                    <img src="/placeholder.svg" alt="" /> Modern Loft
+                  <img src="/area.svg" alt="" /> Modern Loft
                   </span>
                 </div>
               </div>
@@ -103,7 +107,7 @@ const PropertyDetails = () => {
                   transportation.
                 </p>
                 <div className="tour--link">
-                  <img src="/placeholder.svg" alt="" /> <h5>View Video Tour</h5>
+                  <img src="/video.svg" alt="" /> <h5>View Video Tour</h5>
                 </div>
               </div>
               <hr />
@@ -120,23 +124,23 @@ const PropertyDetails = () => {
             </div>
             <div className="property__details--request__form">
               <div className="tabs">
-                <div className="tab active">Schedule a Tour</div>
-                <div className="tab">Request Quote</div>
+                <div className="tab active"><img src="/date-filled.svg" alt=""/> <span>Schedule a Tour</span></div>
+                <div className="tab"><img src="/message-filled.svg" alt=""/> <span>Request Quote</span></div>
               </div>
               <div className="input-group">
-                <span className="icon">📞</span>
+                <span className="icon"><img src="/call-primary.svg" alt=""/></span>
                 <input type="text" placeholder="Phone Number" />
               </div>
               <div className="input-group">
-                <span className="icon">📅</span>
+                <span className="icon"><img src="/date-primary.svg" alt=""/></span>
                 <input type="text" placeholder="Select Date" />
               </div>
               <div className="input-group">
-                <span className="icon">⏰</span>
+                <span className="icon"><img src="/time-primary.svg" alt=""/></span>
                 <input type="text" placeholder="11:00 AM" />
               </div>
               <div className="input-group">
-                <span className="icon">📧</span>
+                <span className="icon"><img src="/mail-primary.svg" alt=""/></span>
                 <input type="text" placeholder="+ 1 234 567 890" />
               </div>
             </div>
@@ -151,7 +155,7 @@ const PropertyDetails = () => {
             <div className="accordion">
               <div className="accordion__header active">
                 Interior Details
-                <span className="arrow">▶</span>
+                <span className="arrow"><img src="/arrow-down.svg" alt=""/></span>
               </div>
               <div className="accordion__content">
                 <div className="section-title">Interior Details</div>
@@ -187,21 +191,21 @@ const PropertyDetails = () => {
             <div className="accordion">
               <div className="accordion__header">
                 Property Size
-                <span className="arrow">▶</span>
+                <span className="arrow"><img src="/arrow-down.svg" alt=""/></span>
               </div>
             </div>
 
             <div className="accordion">
               <div className="accordion__header">
                 Land Area
-                <span className="arrow">▶</span>
+                <span className="arrow"><img src="/arrow-down.svg" alt=""/></span>
               </div>
             </div>
 
             <div className="accordion">
               <div className="accordion__header">
                 Year Build
-                <span className="arrow">▶</span>
+                <span className="arrow"><img src="/arrow-down.svg" alt=""/></span>
               </div>
             </div>
           </div>
@@ -211,7 +215,7 @@ const PropertyDetails = () => {
               <div className="card__info__header--right">
                 <div className="agent__info">
                   <div className="profile__img">
-                    <img src="/placeholder.svg" alt="" />
+                    <img src="https://cdn.prod.website-files.com/64e2f6e9e8285220bd834d6e/64e2f6e9e8285220bd834da7_Estately%20Agent%20-%20Edwin%20Martins.webp" alt="" />
                   </div>
                   <div className="profile__info">
                     <h4>Edwin Martins</h4>
@@ -236,8 +240,8 @@ const PropertyDetails = () => {
             {cardItemsData.map((item, index) => (
               <HomeFeaturedCardItem key={index} itemData={item} />
             ))}
- 
-      
+
+
           </div>
         </div>
       </div>

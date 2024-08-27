@@ -323,7 +323,7 @@
       gap: toRem(40);
       padding: toRem(16.5);
       background-color: white;
-      border-radius: 30px;
+      border-radius: 20px;
       border: 3px solid $color-secondary-dark-primary;
       top: toRem(10);
       right: 10%;
@@ -403,12 +403,14 @@
         height: toRem(74.25);
         border-radius: 10px;
         background-color: $color-brand-lavender-quaternary;
-        @media (max-width: 1280px) {
-          width: toRem(48);
-          height: toRem(48);
+        @media (max-width: 425px) {
+          height: auto;
+          width: auto;
+          overflow: hidden;
         }
         img {
           width: toRem(60);
+          
         }
       }
     }
